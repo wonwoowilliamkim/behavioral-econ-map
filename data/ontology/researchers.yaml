@@ -1,0 +1,95 @@
+# Key researchers in Behavioral Public Economics
+
+researchers:
+  - id: allcott_hunt
+    name: Hunt Allcott
+    affiliation: NYU Stern / Microsoft Research
+    topics: [corrective_policy, internality_tax, sin_taxes, energy_nudges]
+    website: https://www.huntallcott.com
+    key_papers: [allcott_taubinsky_2015, allcott_lockwood_taubinsky_2019, allcott_rogers_2014, allcott_sunstein_2015]
+
+  - id: taubinsky_dmitry
+    name: Dmitry Taubinsky
+    affiliation: UC Berkeley
+    topics: [internality_tax, sin_taxes, welfare_analysis, bias_measurement]
+    website: https://dtaubinsky.com
+    key_papers: [allcott_taubinsky_2015, allcott_lockwood_taubinsky_2019]
+
+  - id: bernheim_doug
+    name: B. Douglas Bernheim
+    affiliation: Stanford
+    topics: [welfare_analysis, bpf_framework, paternalism]
+    key_papers: [bernheim_rangel_2009, bernheim_2016]
+
+  - id: rangel_antonio
+    name: Antonio Rangel
+    affiliation: Caltech
+    topics: [welfare_analysis, bpf_framework, neuroeconomics]
+    key_papers: [bernheim_rangel_2009]
+
+  - id: chetty_raj
+    name: Raj Chetty
+    affiliation: Harvard
+    topics: [sufficient_stats, tax_salience, retirement_defaults, program_takeup]
+    website: https://rajchetty.com
+    key_papers: [chetty_2015, chetty_looney_kroft_2009, chetty_friedman_leth_nielsen_2014]
+
+  - id: laibson_david
+    name: David Laibson
+    affiliation: Harvard
+    topics: [present_bias, hyperbolic_discounting, retirement_defaults, savings_behavior]
+    key_papers: [laibson_1997]
+
+  - id: linos_elizabeth
+    name: Elizabeth Linos
+    affiliation: Harvard Kennedy School
+    topics: [sludge_friction, admin_burden, program_takeup, nudges_defaults]
+    key_papers: [linos_et_al_2022]
+
+  - id: stantcheva_stefanie
+    name: Stefanie Stantcheva
+    affiliation: Harvard
+    topics: [tax_complexity, tax_salience, survey_methods]
+    website: https://scholar.harvard.edu/stantcheva
+    key_papers: [stantcheva_2021]
+
+  - id: sunstein_cass
+    name: Cass Sunstein
+    affiliation: Harvard Law
+    topics: [paternalism, nudges_defaults, sludge_friction, admin_burden]
+    key_papers: [thaler_sunstein_2003, allcott_sunstein_2015]
+
+  - id: thaler_richard
+    name: Richard Thaler
+    affiliation: Chicago Booth (Nobel 2017)
+    topics: [nudges_defaults, retirement_defaults, paternalism, present_bias]
+    key_papers: [thaler_sunstein_2003, madrian_shea_2001]
+
+  - id: ashraf_nava
+    name: Nava Ashraf
+    affiliation: LSE
+    topics: [present_bias, savings_behavior, commitment_devices, development]
+    key_papers: [ashraf_karlan_yin_2006]
+
+  - id: finkelstein_amy
+    name: Amy Finkelstein
+    affiliation: MIT
+    topics: [tax_salience, program_takeup, sludge_friction]
+    key_papers: [finkelstein_2009, finkelstein_notowidigdo_2019]
+
+  - id: grubb_michael
+    name: Michael Grubb
+    affiliation: Boston College
+    topics: [shrouded_attributes, present_bias, energy_nudges]
+
+  - id: madrian_brigitte
+    name: Brigitte Madrian
+    affiliation: BYU
+    topics: [retirement_defaults, savings_behavior, nudges_defaults]
+    key_papers: [madrian_shea_2001]
+
+  - id: bhargava_saurabh
+    name: Saurabh Bhargava
+    affiliation: Carnegie Mellon
+    topics: [program_takeup, admin_burden, tax_salience]
+    key_papers: [bhargava_manoli_2015]

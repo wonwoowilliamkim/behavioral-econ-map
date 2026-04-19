@@ -1,0 +1,195 @@
+# Behavioral Public Economics — Topic Ontology
+# Structure: topic → subtopics → key concepts
+
+topics:
+  - id: welfare_analysis
+    label: Welfare Analysis with Biases
+    color: "#4C9BE8"
+    description: >
+      How to evaluate welfare when individual choices may not reflect true preferences.
+      The foundational challenge of behavioral public economics.
+    subtopics:
+      - id: revealed_preference_limits
+        label: Limits of Revealed Preference
+        key_concepts:
+          - Internalities (self-harm from own choices)
+          - Mistakes vs. preferences
+          - Paternalism threshold
+      - id: bpf_framework
+        label: Behavioral Public Finance Framework
+        key_concepts:
+          - Bernheim-Rangel beyond-RP framework
+          - Sufficient statistics approach
+          - Choice-process data
+      - id: paternalism
+        label: Paternalism & Libertarian Paternalism
+        key_concepts:
+          - Soft vs. hard paternalism
+          - Nudge legitimacy
+          - Autonomy preservation
+
+  - id: corrective_policy
+    label: Corrective Taxation & Policy
+    color: "#E85C4C"
+    description: >
+      Optimal design of taxes and regulations when agents have biases.
+      Extends Pigouvian taxation to internalities.
+    subtopics:
+      - id: internality_tax
+        label: Internality Taxation
+        key_concepts:
+          - Optimal corrective tax = externality + internality
+          - Allcott-Taubinsky framework
+          - Bias heterogeneity
+      - id: sin_taxes
+        label: Sin Taxes
+        key_concepts:
+          - Tobacco taxation
+          - Sugar-sweetened beverages
+          - Alcohol taxes
+          - Distributional effects
+      - id: nudge_vs_tax
+        label: Nudge vs. Tax Tradeoffs
+        key_concepts:
+          - When to nudge vs. tax
+          - Welfare comparison
+          - Targeting efficiency
+
+  - id: nudges_defaults
+    label: Nudges & Default Effects
+    color: "#48BB78"
+    description: >
+      Behavioral interventions that alter choice architecture without restricting options.
+      Defaults, framing, social norms, reminders.
+    subtopics:
+      - id: retirement_defaults
+        label: Retirement Savings Defaults
+        key_concepts:
+          - Auto-enrollment
+          - Default contribution rates
+          - Status quo bias
+          - 401(k) design
+      - id: energy_nudges
+        label: Energy & Environmental Nudges
+        key_concepts:
+          - Social comparison (Opower)
+          - Green defaults
+          - Appliance efficiency
+      - id: health_nudges
+        label: Health Behavior Nudges
+        key_concepts:
+          - Smoking cessation
+          - Vaccination reminders
+          - Food labeling
+      - id: social_norms
+        label: Social Norm Messaging
+        key_concepts:
+          - Descriptive vs. injunctive norms
+          - Tax compliance
+          - Pro-social behavior
+
+  - id: sludge_friction
+    label: Sludge & Administrative Burden
+    color: "#ED8936"
+    description: >
+      Frictions in accessing public programs. How complexity reduces take-up
+      of beneficial programs and imposes welfare costs.
+    subtopics:
+      - id: program_takeup
+        label: Program Take-up & Barriers
+        key_concepts:
+          - EITC take-up
+          - Medicaid enrollment
+          - Stigma effects
+          - Application complexity
+      - id: admin_burden
+        label: Administrative Burden
+        key_concepts:
+          - Compliance costs
+          - Sludge (Sunstein)
+          - Information costs
+          - Psychological costs
+      - id: simplification
+        label: Simplification Interventions
+        key_concepts:
+          - Form simplification
+          - Pre-populated returns
+          - Automatic enrollment
+
+  - id: present_bias
+    label: Present Bias & Self-Control
+    color: "#9F7AEA"
+    description: >
+      Time-inconsistent preferences and their implications for policy.
+      Retirement, health, debt, and savings behavior.
+    subtopics:
+      - id: hyperbolic_discounting
+        label: Hyperbolic Discounting
+        key_concepts:
+          - Beta-delta model
+          - Naive vs. sophisticated agents
+          - Commitment devices
+      - id: savings_behavior
+        label: Savings & Retirement
+        key_concepts:
+          - Present bias in savings
+          - Commitment savings accounts
+          - Pension policy
+      - id: debt_credit
+        label: Debt & Credit Markets
+        key_concepts:
+          - Credit card debt puzzle
+          - Payday lending
+          - Shrouded fees
+
+  - id: tax_salience
+    label: Tax Salience & Complexity
+    color: "#F6AD55"
+    description: >
+      How visibility and complexity of taxes affect behavior and welfare.
+      Chetty-Looney-Kroft framework.
+    subtopics:
+      - id: salience_effects
+        label: Tax Salience Effects
+        key_concepts:
+          - Sales tax non-salience
+          - Chetty-Looney-Kroft
+          - Shrouded attributes
+      - id: tax_complexity
+        label: Tax Complexity
+        key_concepts:
+          - Compliance costs
+          - EITC complexity
+          - Stantcheva survey methods
+      - id: info_interventions
+        label: Information Interventions
+        key_concepts:
+          - Tax incidence perceptions
+          - Price posting
+          - Transparency mandates
+
+  - id: empirical_methods
+    label: Empirical Methods
+    color: "#76E4F7"
+    description: >
+      Methods for measuring biases and evaluating behavioral interventions
+      in public economics contexts.
+    subtopics:
+      - id: bias_measurement
+        label: Measuring Consumer Biases
+        key_concepts:
+          - Survey experiments
+          - Revealed vs. stated preference gaps
+          - Structural estimation
+      - id: sufficient_stats
+        label: Sufficient Statistics Approach
+        key_concepts:
+          - Chetty sufficient statistics
+          - Behavioral wedges
+          - Policy elasticities
+      - id: rct_field
+        label: RCTs & Field Experiments
+        key_concepts:
+          - Nudge RCTs
+          - Natural experiments
+          - Lab-in-the-field

@@ -1,0 +1,156 @@
+# Target journals for Behavioral Public Economics Map
+# Focus: top 30-50 journals where behavioral public economics papers appear
+
+general_top5:
+  - name: American Economic Review
+    abbr: AER
+    publisher: AEA
+    relevance: Core — many landmark BPE papers
+  - name: Quarterly Journal of Economics
+    abbr: QJE
+    publisher: Oxford
+    relevance: Core — Chetty, Laibson, Allcott papers
+  - name: Journal of Political Economy
+    abbr: JPE
+    publisher: Chicago
+    relevance: Core — behavioral taxation, welfare analysis
+  - name: Review of Economic Studies
+    abbr: REStud
+    publisher: Oxford
+    relevance: Core — theory + empirics
+  - name: Econometrica
+    abbr: ECMA
+    publisher: Econometric Society
+    relevance: Core — Bernheim-Rangel framework
+
+public_economics:
+  - name: Journal of Public Economics
+    abbr: JPubE
+    publisher: Elsevier
+    relevance: Primary venue — sin taxes, nudges, welfare
+  - name: American Economic Journal Policy
+    abbr: AEJ:Policy
+    publisher: AEA
+    relevance: Primary venue — policy-focused empirics
+  - name: American Economic Journal Applied Economics
+    abbr: AEJ:Applied
+    publisher: AEA
+    relevance: Applied behavioral interventions
+  - name: American Economic Journal Economic Policy
+    abbr: AEJ:EP
+    publisher: AEA
+    relevance: Tax policy, program design
+  - name: Review of Economics and Statistics
+    abbr: REStat
+    publisher: MIT Press
+    relevance: Empirical methods, causal inference
+  - name: Economic Journal
+    abbr: EJ
+    publisher: Oxford
+    relevance: UK/EU behavioral policy papers
+  - name: Journal of the European Economic Association
+    abbr: JEEA
+    publisher: Oxford
+    relevance: European behavioral public economics
+
+behavioral_economics:
+  - name: Journal of Economic Perspectives
+    abbr: JEP
+    publisher: AEA
+    relevance: Survey articles, accessible overviews
+  - name: Journal of Economic Literature
+    abbr: JEL
+    publisher: AEA
+    relevance: Literature reviews on behavioral topics
+  - name: Journal of Behavioral Decision Making
+    abbr: JBDM
+    publisher: Wiley
+    relevance: Psychology-economics interface
+  - name: Journal of Economic Psychology
+    abbr: JEPsy
+    publisher: Elsevier
+    relevance: Behavioral mechanisms
+  - name: Journal of Economic Behavior and Organization
+    abbr: JEBO
+    publisher: Elsevier
+    relevance: Behavioral institutions, nudges
+  - name: Behavioural Public Policy
+    abbr: BPP
+    publisher: Cambridge
+    relevance: Direct venue for nudge/sludge policy papers
+
+health_energy_retirement:
+  - name: Journal of Health Economics
+    abbr: JHE
+    publisher: Elsevier
+    relevance: Health nudges, sin taxes, internalities
+  - name: American Journal of Health Economics
+    abbr: AJHE
+    publisher: MIT Press
+    relevance: Health behavior interventions
+  - name: Journal of Human Resources
+    abbr: JHR
+    publisher: Wisconsin
+    relevance: Retirement savings, labor supply biases
+  - name: Journal of Labor Economics
+    abbr: JOLE
+    publisher: Chicago
+    relevance: Present bias, labor market frictions
+  - name: Journal of Environmental Economics and Management
+    abbr: JEEM
+    publisher: Elsevier
+    relevance: Energy nudges, environmental behavior
+  - name: Energy Economics
+    abbr: EE
+    publisher: Elsevier
+    relevance: Energy efficiency biases
+
+applied_empirical:
+  - name: Journal of Econometrics
+    abbr: JoE
+    publisher: Elsevier
+    relevance: Structural estimation of biases
+  - name: Journal of Applied Econometrics
+    abbr: JAE
+    publisher: Wiley
+    relevance: Empirical identification strategies
+  - name: Economic Inquiry
+    abbr: EI
+    publisher: Wiley
+    relevance: Applied behavioral papers
+  - name: European Economic Review
+    abbr: EER
+    publisher: Elsevier
+    relevance: European behavioral policy
+  - name: Oxford Economic Papers
+    abbr: OEP
+    publisher: Oxford
+    relevance: Optimal tax with behavioral agents
+
+finance_adjacent:
+  - name: Journal of Finance
+    abbr: JF
+    publisher: Wiley
+    relevance: Household finance, retirement biases
+  - name: Review of Financial Studies
+    abbr: RFS
+    publisher: Oxford
+    relevance: Behavioral household finance
+  - name: Journal of Financial Economics
+    abbr: JFE
+    publisher: Elsevier
+    relevance: Investor biases, retirement
+
+psychology_adjacent:
+  - name: Psychological Science
+    abbr: PS
+    publisher: SAGE
+    relevance: Behavioral mechanisms underlying interventions
+  - name: Journal of Consumer Research
+    abbr: JCR
+    publisher: Oxford
+    relevance: Consumer biases relevant to policy
+  - name: Journal of Marketing Research
+    abbr: JMR
+    publisher: SAGE
+    relevance: Nudge design, choice architecture
