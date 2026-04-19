@@ -1,95 +1,174 @@
-# Behavioral Econ Map
+# Behavioral Public Economics — Interactive Research Map
 
-**Behavioral Public Economics — Interactive Research Ontology**
+> An Obsidian-style, browser-based knowledge graph of the **behavioral public economics** literature — built from papers cited in Bernheim & Taubinsky (2018), the authoritative handbook chapter on the field.
 
-행동공공경제학 분야의 연구 지형을 온톨로지 기반으로 정리해  
-한눈에 탐색할 수 있는 인터랙티브 웹사이트.
+**Live demo:** [GitHub Pages](https://wonwoowilliamkim.github.io/behavioral-econ-map/) _(deploy instructions below)_
 
-## 핵심 아이디어
+---
 
-> Obsidian의 그래프 뷰처럼 — 토픽 → 서브토픽 → 논문 → 연구자가  
-> 연결된 인터랙티브 맵으로, 브라우저에서 바로 탐색 가능.
+## What Is This?
 
-"Internality taxation 쪽에 어떤 연구가 있지?"  
-"Nudge + retirement savings 교차점은 누가 연구했지?"  
-→ 클릭 몇 번으로 바로 확인.
+This project turns an academic literature into an **interactive, explorable network**. Every paper, researcher, and topic in the graph is a clickable node. Click a paper → see its summary, journal, handbook section, and every connected author and topic. Click a researcher → see all their papers at once. Filter by node type. Search across the entire corpus with `⌘K`.
 
-## 온톨로지 구조
+The ontology is grounded in **Bernheim & Taubinsky (2018) "Behavioral Public Economics"** (NBER WP 24828, _Handbook of Behavioral Economics_ Vol. 1) — the most comprehensive survey of the field to date. Only papers directly cited in that handbook chapter are included.
 
-```
-Behavioral Public Economics
-│
-├── Welfare Analysis with Biases
-│   ├── Revealed vs. Stated Preference
-│   ├── Paternalism & Libertarian Paternalism
-│   └── Beyond Revealed Preference (Bernheim & Rangel)
-│
-├── Corrective Policy
-│   ├── Internality Taxation (Allcott, Taubinsky)
-│   ├── Sin Taxes (tobacco, sugar, alcohol)
-│   └── Nudge vs. Tax tradeoffs
-│
-├── Nudges & Defaults
-│   ├── Retirement Savings (401k defaults)
-│   ├── Energy Efficiency
-│   └── Health Behaviors
-│
-├── Sludge & Friction
-│   ├── Program Take-up
-│   └── Administrative Burden
-│
-└── Empirical Methods
-    ├── Bias Measurement
-    ├── Sufficient Statistics
-    └── Structural vs. Reduced Form
-```
+---
 
-## 기술 스택
+## Field Coverage
 
-- **데이터**: YAML 온톨로지 파일 (논문, 연구자, 토픽)
-- **시각화**: D3.js force-directed graph
-- **사이트**: 순수 HTML/CSS/JS — GitHub Pages 배포
-- **검색**: 클라이언트 사이드 fuzzy search
+The map covers **six thematic clusters** mirroring the handbook's structure:
 
-## 주요 연구자 (초기 커버리지)
+| Handbook Section | Topic Cluster | Key Papers |
+|---|---|---|
+| §2 | **Behavioral Welfare Economics** | Bernheim-Rangel (2009), Chetty (2015) |
+| §3.2 | **Corrective Taxation** | Allcott-Taubinsky (2015), Gruber-Kőszegi (2001) |
+| §3.3 | **Distributional Concerns** | Allcott-Lockwood-Taubinsky (2018) |
+| §3.4 | **Tax Salience** | Chetty-Looney-Kroft (2009), Finkelstein (2009) |
+| §3.5 | **Nudges & Defaults** | Thaler-Sunstein (2003), Madrian-Shea (2001) |
+| §4–5 | **Saving & Earnings** | Laibson (1997), Bhargava-Manoli (2015) |
 
-- Hunt Allcott, Dmitry Taubinsky — internality taxation
-- Doug Bernheim, Antonio Rangel — behavioral welfare analysis
-- Raj Chetty — sufficient statistics, tax salience
-- David Laibson — present bias, retirement savings
-- Elizabeth Linos — sludge, administrative burden
-- Stefanie Stantcheva — tax complexity, survey methods
+**26 papers · 28 researchers · 7 topic clusters · 22 subtopics · 236+ connections**
 
-## 레퍼런스
+---
 
-- [Behavioral Public Economics Mini-Course](https://sites.google.com/view/behavioralpublic/home)
-- NBER Behavioral Public Economics Working Group
+## Key Ideas Mapped
 
-## 프로젝트 구조
+### Behavioral Welfare Economics (§2)
+The central challenge: when choices may not reveal true preferences, how do we evaluate welfare? Bernheim & Rangel (2009) propose the _unambiguous choice relation_ P\* — a minimal welfare criterion that avoids interpersonal comparisons while still saying something substantive. Chetty (2015) argues for a more pragmatic _sufficient statistics_ approach: use reduced-form behavioral wedges without specifying a full cognitive model.
+
+### Corrective Taxation (§3)
+The classic Pigouvian tax (= externality) gets extended to _internalities_ — harms consumers impose on their future selves through biased choices. The optimal corrective tax becomes:
 
 ```
+τ* = marginal externality + average internality
+```
+
+Allcott & Taubinsky (2015) operationalize this using a debiasing experiment in the lightbulb market. Gruber & Kőszegi (2001) apply it to cigarette taxation under quasi-hyperbolic discounting.
+
+### Tax Salience (§3.4)
+Chetty, Looney & Kroft (2009) show that when taxes are not included in posted prices, consumers underreact by a factor σ ≈ 0.06–0.35. This has implications for both behavioral welfare analysis and the political economy of taxation (Finkelstein 2009).
+
+### Nudges & Defaults (§3.5)
+Libertarian paternalism (Thaler & Sunstein 2003): since defaults inevitably influence behavior, policy-makers should choose defaults that maximize welfare. Madrian & Shea (2001) document that auto-enrollment raises 401(k) participation from ~49% to ~86%.
+
+---
+
+## Project Structure
+
+```
+behavioral-econ-map/
+│
 ├── data/
-│   ├── ontology/
-│   │   ├── topics.yaml        # 토픽 계층 구조
-│   │   ├── papers.yaml        # 논문 메타데이터
-│   │   └── researchers.yaml   # 연구자 프로파일
-│   └── graph.json             # D3 입력용 변환 데이터
-├── site/
-│   ├── index.html             # 메인 페이지
-│   ├── graph.js               # D3 시각화
-│   ├── search.js              # 검색 기능
-│   └── style.css
+│   └── ontology/
+│       ├── topics.yaml        # 7 topic clusters, 22 subtopics with handbook sections
+│       ├── papers.yaml        # 26 papers from Bernheim-Taubinsky (2018) w24828
+│       └── researchers.yaml   # 28 researchers, key papers, affiliations
+│
 ├── scripts/
-│   └── build_graph.py         # YAML → graph.json 변환
-└── docs/                      # GitHub Pages 빌드 출력
+│   └── build_graph.py         # YAML → site/graph.json (D3 input)
+│
+├── site/                      # Static site — deploy to GitHub Pages
+│   ├── index.html             # Layout, header, filter bar, detail panel
+│   ├── style.css              # Dark-mode design system
+│   ├── graph.js               # D3 v7 force-directed graph, tooltips, highlight
+│   ├── search.js              # Client-side fuzzy search with keyboard nav
+│   └── graph.json             # Auto-generated — do not edit directly
+│
+└── w24828.pdf                 # Source: Bernheim & Taubinsky (2018) NBER WP
 ```
 
-## 마일스톤
+---
 
-| 단계 | 목표 |
-|------|------|
-| 1 | 온톨로지 YAML 초안 (핵심 토픽 + 논문 30편) |
-| 2 | D3 그래프 뷰 첫 버전 (GitHub Pages) |
-| 3 | 클릭 시 논문 정보 패널 표시 |
-| 4 | 검색 + 필터 기능 |
-| 5 | 논문 자동 추가 파이프라인 |
+## How to Run Locally
+
+### 1. Prerequisites
+
+```bash
+pip install pyyaml
+```
+
+### 2. Build the graph
+
+```bash
+python scripts/build_graph.py
+# → Built graph: 84 nodes, 236 links → site/graph.json
+```
+
+### 3. Serve the site
+
+```bash
+# Python 3
+python -m http.server 8080 --directory site
+# then open http://localhost:8080
+```
+
+> **Why a local server?** The site loads `graph.json` via `fetch()`, which requires a server due to browser CORS policy. Opening `index.html` directly from the filesystem won't work.
+
+---
+
+## GitHub Pages Deployment
+
+```bash
+# From repo root
+git checkout -b gh-pages   # or use your existing main branch
+git add site/
+git commit -m "deploy site"
+git push origin gh-pages
+
+# In GitHub repo → Settings → Pages → Source: gh-pages branch / /site folder
+```
+
+---
+
+## UI Features
+
+| Feature | How |
+|---|---|
+| **Explore** | Click any node to highlight its neighborhood and open the detail panel |
+| **Search** | `⌘K` (Mac) / `Ctrl+K` (Win) to focus search; arrow keys to navigate results |
+| **Filter** | Header buttons filter by node type: Topics / Subtopics / Papers / Researchers |
+| **Zoom & Pan** | Scroll to zoom · Drag to pan · `+` / `−` / `⌂` buttons |
+| **Drag nodes** | Nodes can be repositioned by dragging |
+| **Tooltips** | Hover any node for a quick-glance summary |
+| **Paper panel** | Click a paper → see journal, year, handbook section, abstract, links |
+
+---
+
+## Data Sources
+
+All papers are from the bibliography of:
+
+> Bernheim, B. D., & Taubinsky, D. (2018). **Behavioral Public Economics**. In B. D. Bernheim, S. DellaVigna, & D. Laibson (Eds.), _Handbook of Behavioral Economics: Applications and Foundations_, Vol. 1 (pp. 381–516). Elsevier. [NBER WP 24828](https://www.nber.org/papers/w24828)
+
+Journals covered: _AER, QJE, JPE, REStud, Econometrica, JPubE, JEEA, REStat, AEA P&P_.
+
+---
+
+## How to Add Papers
+
+1. Open `data/ontology/papers.yaml`
+2. Add an entry following the existing format:
+
+```yaml
+- id: your_unique_id
+  title: "Full paper title"
+  authors: [LastName1, LastName2]
+  year: 2024
+  journal: AER
+  section: "§3.2 Corrective Taxation"       # optional
+  topics: [internality_tax, corrective_policy]  # must match subtopic/topic IDs
+  url: https://doi.org/...
+  summary: >
+    2-3 sentence summary of the paper's contribution.
+```
+
+3. If needed, add the researcher to `researchers.yaml`
+4. Rebuild: `python scripts/build_graph.py`
+
+---
+
+## Reference
+
+- **Handbook chapter (source):** [Bernheim & Taubinsky (2018) NBER WP 24828](https://www.nber.org/papers/w24828)
+- **Mini-course notes:** [Behavioral Public Economics Mini-Course](https://sites.google.com/view/behavioralpublic/home)
+- **NBER working group:** NBER Behavioral Public Economics Working Group

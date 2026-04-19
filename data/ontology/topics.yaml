@@ -1,195 +1,234 @@
 # Behavioral Public Economics — Topic Ontology
-# Structure: topic → subtopics → key concepts
+# Based on Bernheim & Taubinsky (2018) "Behavioral Public Economics"
+# Handbook of Behavioral Economics, Vol.1 — NBER WP 24828
+# Structure: handbook section → topic → subtopics
 
 topics:
+
+  # ── §2: Behavioral Welfare Economics ────────────────────────────────────
   - id: welfare_analysis
-    label: Welfare Analysis with Biases
+    label: Behavioral Welfare Economics
     color: "#4C9BE8"
+    handbook_section: "§2"
     description: >
       How to evaluate welfare when individual choices may not reflect true preferences.
-      The foundational challenge of behavioral public economics.
+      The Bernheim-Rangel "beyond revealed preference" framework provides foundations
+      for behavioral welfare economics without assuming choices are utility-maximizing.
     subtopics:
-      - id: revealed_preference_limits
-        label: Limits of Revealed Preference
-        key_concepts:
-          - Internalities (self-harm from own choices)
-          - Mistakes vs. preferences
-          - Paternalism threshold
       - id: bpf_framework
-        label: Behavioral Public Finance Framework
+        label: Beyond Revealed Preference
         key_concepts:
-          - Bernheim-Rangel beyond-RP framework
-          - Sufficient statistics approach
-          - Choice-process data
+          - Bernheim-Rangel unambiguous choice relation P*
+          - Choice process data as auxiliary information
+          - EVA and EVB welfare bounds
+          - Ancillary conditions on choice frames
+
       - id: paternalism
         label: Paternalism & Libertarian Paternalism
         key_concepts:
           - Soft vs. hard paternalism
           - Nudge legitimacy
           - Autonomy preservation
+          - Default-setter welfare criterion
 
+      - id: revealed_preference_limits
+        label: Limits of Revealed Preference
+        key_concepts:
+          - Internalities (self-harm from own choices)
+          - Mistakes vs. genuine preferences
+          - Decision utility vs. experienced utility
+          - Sufficient statistics approach (Chetty)
+
+  # ── §3: Corrective Taxation & Policy ────────────────────────────────────
   - id: corrective_policy
     label: Corrective Taxation & Policy
     color: "#E85C4C"
+    handbook_section: "§3"
     description: >
       Optimal design of taxes and regulations when agents have biases.
-      Extends Pigouvian taxation to internalities.
+      Extends Pigouvian taxation to internalities — self-imposed harms from
+      present bias, inattention, or misperceptions — in addition to externalities.
     subtopics:
       - id: internality_tax
         label: Internality Taxation
         key_concepts:
           - Optimal corrective tax = externality + internality
           - Allcott-Taubinsky framework
-          - Bias heterogeneity
+          - Price-metric bias γ
+          - Bias heterogeneity across consumers
+
       - id: sin_taxes
         label: Sin Taxes
         key_concepts:
-          - Tobacco taxation
-          - Sugar-sweetened beverages
+          - Tobacco / cigarette taxation
+          - Sugar-sweetened beverage taxes
           - Alcohol taxes
-          - Distributional effects
-      - id: nudge_vs_tax
-        label: Nudge vs. Tax Tradeoffs
-        key_concepts:
-          - When to nudge vs. tax
-          - Welfare comparison
-          - Targeting efficiency
+          - Modified Pigouvian principle
 
+      - id: distributional_concerns
+        label: Distributional Concerns
+        key_concepts:
+          - Regressivity of sin taxes
+          - Atkinson-Stiglitz theorem breakdown
+          - Optimal soda tax with income heterogeneity
+          - Tax incidence with present-biased consumers
+
+      - id: salience_effects
+        label: Tax Salience
+        key_concepts:
+          - Sales tax non-salience
+          - Chetty-Looney-Kroft framework
+          - Underreaction coefficient σ
+          - E-ZPass natural experiment
+
+  # ── §3.5: Nudges & Defaults ──────────────────────────────────────────────
   - id: nudges_defaults
     label: Nudges & Default Effects
     color: "#48BB78"
+    handbook_section: "§3.5"
     description: >
       Behavioral interventions that alter choice architecture without restricting options.
-      Defaults, framing, social norms, reminders.
+      Libertarian paternalism: preserve choice freedom while steering people toward
+      better outcomes through defaults, framing, and social norms.
     subtopics:
       - id: retirement_defaults
         label: Retirement Savings Defaults
         key_concepts:
-          - Auto-enrollment
+          - Auto-enrollment in 401(k) plans
           - Default contribution rates
-          - Status quo bias
-          - 401(k) design
+          - Status quo bias / inertia
+          - Active choice vs. passive defaults
+
       - id: energy_nudges
-        label: Energy & Environmental Nudges
+        label: Energy & Social Comparison Nudges
         key_concepts:
-          - Social comparison (Opower)
-          - Green defaults
-          - Appliance efficiency
-      - id: health_nudges
-        label: Health Behavior Nudges
-        key_concepts:
-          - Smoking cessation
-          - Vaccination reminders
-          - Food labeling
+          - Opower social comparison reports
+          - Home energy report persistence
+          - Appliance efficiency information
+          - Welfare cost of nudges
+
       - id: social_norms
         label: Social Norm Messaging
         key_concepts:
-          - Descriptive vs. injunctive norms
-          - Tax compliance
+          - Descriptive norms vs. injunctive norms
+          - Conservation nudges
           - Pro-social behavior
 
+  # ── §4: Sludge & Administrative Burden ───────────────────────────────────
   - id: sludge_friction
     label: Sludge & Administrative Burden
     color: "#ED8936"
+    handbook_section: "§4–§5"
     description: >
-      Frictions in accessing public programs. How complexity reduces take-up
-      of beneficial programs and imposes welfare costs.
+      Frictions in accessing public programs. Complexity, stigma, and psychological
+      costs reduce take-up of beneficial programs, imposing welfare costs on
+      eligible non-participants.
     subtopics:
       - id: program_takeup
-        label: Program Take-up & Barriers
+        label: Program Take-Up & Barriers
         key_concepts:
-          - EITC take-up
-          - Medicaid enrollment
+          - EITC incomplete take-up
+          - Medicaid enrollment barriers
           - Stigma effects
           - Application complexity
+
       - id: admin_burden
         label: Administrative Burden
         key_concepts:
           - Compliance costs
           - Sludge (Sunstein)
-          - Information costs
-          - Psychological costs
-      - id: simplification
-        label: Simplification Interventions
-        key_concepts:
-          - Form simplification
-          - Pre-populated returns
-          - Automatic enrollment
+          - Information and psychological costs
+          - Simplification experiments
 
+  # ── §4: Saving & Self-Control ────────────────────────────────────────────
   - id: present_bias
     label: Present Bias & Self-Control
     color: "#9F7AEA"
+    handbook_section: "§4"
     description: >
-      Time-inconsistent preferences and their implications for policy.
-      Retirement, health, debt, and savings behavior.
+      Time-inconsistent preferences and their policy implications.
+      The β-δ quasi-hyperbolic discounting model captures present focus
+      that distorts savings, health, and labor supply decisions.
     subtopics:
       - id: hyperbolic_discounting
         label: Hyperbolic Discounting
         key_concepts:
-          - Beta-delta model
+          - β-δ (quasi-hyperbolic) model
           - Naive vs. sophisticated agents
-          - Commitment devices
+          - Temptation and self-control utility
+          - Gul-Pesendorfer representation
+
       - id: savings_behavior
         label: Savings & Retirement
         key_concepts:
           - Present bias in savings
-          - Commitment savings accounts
-          - Pension policy
-      - id: debt_credit
-        label: Debt & Credit Markets
-        key_concepts:
-          - Credit card debt puzzle
-          - Payday lending
-          - Shrouded fees
+          - Poverty and self-control traps
+          - Illiquid assets as commitment
+          - Optimal pension policy design
 
-  - id: tax_salience
-    label: Tax Salience & Complexity
+      - id: commitment_devices
+        label: Commitment Devices
+        key_concepts:
+          - SEED savings account (Philippines)
+          - Demand for commitment
+          - Internal vs. external commitment
+          - History-dependent equilibria
+
+  # ── §5: Earnings & Labor Policy ──────────────────────────────────────────
+  - id: earnings_labor
+    label: Earnings & Labor Policy
     color: "#F6AD55"
+    handbook_section: "§5"
     description: >
-      How visibility and complexity of taxes affect behavior and welfare.
-      Chetty-Looney-Kroft framework.
+      Behavioral dimensions of income taxation, labor supply, and social insurance.
+      Covers tax misperceptions, biased beliefs about unemployment, and
+      behavioral hazard in health insurance.
     subtopics:
-      - id: salience_effects
-        label: Tax Salience Effects
+      - id: income_taxation
+        label: Income Tax Misperceptions
         key_concepts:
-          - Sales tax non-salience
-          - Chetty-Looney-Kroft
-          - Shrouded attributes
-      - id: tax_complexity
-        label: Tax Complexity
-        key_concepts:
-          - Compliance costs
-          - EITC complexity
-          - Stantcheva survey methods
-      - id: info_interventions
-        label: Information Interventions
-        key_concepts:
-          - Tax incidence perceptions
-          - Price posting
-          - Transparency mandates
+          - Taxpayer confusion (CTC as marginal rate)
+          - EITC complexity and take-up
+          - Bunching at kinks
+          - Optimal income tax with behavioral agents
 
+      - id: social_insurance
+        label: Social Insurance Design
+        key_concepts:
+          - Behavioral hazard in health insurance
+          - Optimal copay formula with biases
+          - Unemployment insurance with biased beliefs
+          - Modified Baily-Chetty formula
+
+  # ── Empirical Methods ────────────────────────────────────────────────────
   - id: empirical_methods
     label: Empirical Methods
     color: "#76E4F7"
+    handbook_section: "cross-cutting"
     description: >
       Methods for measuring biases and evaluating behavioral interventions
-      in public economics contexts.
+      in public economics contexts. Bridges structural and reduced-form traditions.
     subtopics:
       - id: bias_measurement
         label: Measuring Consumer Biases
         key_concepts:
-          - Survey experiments
+          - Debiasing experiments
+          - Rational consumer benchmarks (expert comparison)
+          - Financial competence measurement
           - Revealed vs. stated preference gaps
-          - Structural estimation
+
       - id: sufficient_stats
         label: Sufficient Statistics Approach
         key_concepts:
-          - Chetty sufficient statistics
           - Behavioral wedges
-          - Policy elasticities
+          - Policy elasticities without full model
+          - Chetty (2015) AER framework
+          - Reduced-form causal identification
+
       - id: rct_field
-        label: RCTs & Field Experiments
+        label: RCTs & Natural Experiments
         key_concepts:
-          - Nudge RCTs
-          - Natural experiments
-          - Lab-in-the-field
+          - Field experiments with randomized nudges
+          - Regression discontinuity designs
+          - Natural experiments (E-ZPass, 401k plans)
+          - Lab-in-the-field methods

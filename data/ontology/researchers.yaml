@@ -1,95 +1,191 @@
-# Key researchers in Behavioral Public Economics
+# Researchers cited in Bernheim & Taubinsky (2018) "Behavioral Public Economics"
+# NBER Working Paper 24828 — Handbook of Behavioral Economics, Vol.1
+# Only includes authors of papers directly cited in w24828
 
 researchers:
-  - id: allcott_hunt
-    name: Hunt Allcott
-    affiliation: NYU Stern / Microsoft Research
-    topics: [corrective_policy, internality_tax, sin_taxes, energy_nudges]
-    website: https://www.huntallcott.com
-    key_papers: [allcott_taubinsky_2015, allcott_lockwood_taubinsky_2019, allcott_rogers_2014, allcott_sunstein_2015]
+
+  # ── Core Handbook Authors ────────────────────────────────────────────────
+
+  - id: bernheim_doug
+    name: B. Douglas Bernheim
+    affiliation: Stanford University
+    topics: [bpf_framework, welfare_analysis, paternalism, retirement_defaults, savings_behavior]
+    website: https://bernheim.people.stanford.edu
+    key_papers: [bernheim_rangel_2009, bernheim_2016, bernheim_rangel_2004, bernheim_fradkin_popov_2015, bernheim_ray_yeltekin_2015]
 
   - id: taubinsky_dmitry
     name: Dmitry Taubinsky
     affiliation: UC Berkeley
-    topics: [internality_tax, sin_taxes, welfare_analysis, bias_measurement]
+    topics: [internality_tax, sin_taxes, bias_measurement, corrective_policy]
     website: https://dtaubinsky.com
-    key_papers: [allcott_taubinsky_2015, allcott_lockwood_taubinsky_2019]
+    key_papers: [allcott_taubinsky_2015, allcott_lockwood_taubinsky_2018, allcott_mullainathan_taubinsky_2014]
 
-  - id: bernheim_doug
-    name: B. Douglas Bernheim
-    affiliation: Stanford
-    topics: [welfare_analysis, bpf_framework, paternalism]
-    key_papers: [bernheim_rangel_2009, bernheim_2016]
+  # ── Welfare Analysis ─────────────────────────────────────────────────────
 
   - id: rangel_antonio
     name: Antonio Rangel
     affiliation: Caltech
-    topics: [welfare_analysis, bpf_framework, neuroeconomics]
-    key_papers: [bernheim_rangel_2009]
+    topics: [bpf_framework, welfare_analysis, hyperbolic_discounting]
+    key_papers: [bernheim_rangel_2009, bernheim_rangel_2004]
 
   - id: chetty_raj
     name: Raj Chetty
-    affiliation: Harvard
-    topics: [sufficient_stats, tax_salience, retirement_defaults, program_takeup]
+    affiliation: Harvard University
+    topics: [sufficient_stats, salience_effects, retirement_defaults, program_takeup]
     website: https://rajchetty.com
-    key_papers: [chetty_2015, chetty_looney_kroft_2009, chetty_friedman_leth_nielsen_2014]
+    key_papers: [chetty_2015, chetty_looney_kroft_2009]
 
-  - id: laibson_david
-    name: David Laibson
-    affiliation: Harvard
-    topics: [present_bias, hyperbolic_discounting, retirement_defaults, savings_behavior]
-    key_papers: [laibson_1997]
+  - id: gul_faruk
+    name: Faruk Gul
+    affiliation: Princeton University
+    topics: [hyperbolic_discounting, welfare_analysis, savings_behavior]
+    key_papers: [gul_pesendorfer_2001]
 
-  - id: linos_elizabeth
-    name: Elizabeth Linos
-    affiliation: Harvard Kennedy School
-    topics: [sludge_friction, admin_burden, program_takeup, nudges_defaults]
-    key_papers: [linos_et_al_2022]
+  - id: pesendorfer_wolfgang
+    name: Wolfgang Pesendorfer
+    affiliation: Princeton University
+    topics: [hyperbolic_discounting, welfare_analysis, savings_behavior]
+    key_papers: [gul_pesendorfer_2001]
 
-  - id: stantcheva_stefanie
-    name: Stefanie Stantcheva
-    affiliation: Harvard
-    topics: [tax_complexity, tax_salience, survey_methods]
-    website: https://scholar.harvard.edu/stantcheva
-    key_papers: [stantcheva_2021]
+  # ── Corrective Taxation ──────────────────────────────────────────────────
 
-  - id: sunstein_cass
-    name: Cass Sunstein
-    affiliation: Harvard Law
-    topics: [paternalism, nudges_defaults, sludge_friction, admin_burden]
-    key_papers: [thaler_sunstein_2003, allcott_sunstein_2015]
+  - id: allcott_hunt
+    name: Hunt Allcott
+    affiliation: NYU / Microsoft Research
+    topics: [internality_tax, sin_taxes, energy_nudges, corrective_policy, bias_measurement]
+    website: https://www.huntallcott.com
+    key_papers: [allcott_taubinsky_2015, allcott_lockwood_taubinsky_2018, allcott_mullainathan_taubinsky_2014, allcott_rogers_2014]
 
-  - id: thaler_richard
-    name: Richard Thaler
-    affiliation: Chicago Booth (Nobel 2017)
-    topics: [nudges_defaults, retirement_defaults, paternalism, present_bias]
-    key_papers: [thaler_sunstein_2003, madrian_shea_2001]
+  - id: gruber_jonathan
+    name: Jonathan Gruber
+    affiliation: MIT
+    topics: [sin_taxes, corrective_policy, distributional_concerns, present_bias]
+    key_papers: [gruber_koszegi_2001, gruber_koszegi_2004]
 
-  - id: ashraf_nava
-    name: Nava Ashraf
-    affiliation: LSE
-    topics: [present_bias, savings_behavior, commitment_devices, development]
-    key_papers: [ashraf_karlan_yin_2006]
+  - id: koszegi_botond
+    name: Botond Kőszegi
+    affiliation: Central European University
+    topics: [sin_taxes, corrective_policy, present_bias, distributional_concerns]
+    key_papers: [gruber_koszegi_2001, gruber_koszegi_2004]
+
+  - id: odonoghue_ted
+    name: Ted O'Donoghue
+    affiliation: Cornell University
+    topics: [sin_taxes, corrective_policy, hyperbolic_discounting, present_bias]
+    key_papers: [odonoghue_rabin_2006]
+
+  - id: rabin_matthew
+    name: Matthew Rabin
+    affiliation: Harvard University
+    topics: [sin_taxes, corrective_policy, hyperbolic_discounting, present_bias]
+    key_papers: [odonoghue_rabin_2006]
+
+  - id: mullainathan_sendhil
+    name: Sendhil Mullainathan
+    affiliation: University of Chicago
+    topics: [internality_tax, social_insurance, corrective_policy]
+    key_papers: [allcott_mullainathan_taubinsky_2014, baicker_mullainathan_schwartzstein_2015]
+
+  - id: lockwood_benjamin
+    name: Benjamin Lockwood
+    affiliation: University of Pennsylvania (Wharton)
+    topics: [sin_taxes, distributional_concerns, salience_effects, corrective_policy]
+    key_papers: [allcott_lockwood_taubinsky_2018]
+
+  - id: farhi_emmanuel
+    name: Emmanuel Farhi
+    affiliation: Harvard University (1978–2020)
+    topics: [corrective_policy, salience_effects, income_taxation]
+    key_papers: [farhi_gabaix_2015]
+
+  - id: gabaix_xavier
+    name: Xavier Gabaix
+    affiliation: Harvard University
+    topics: [corrective_policy, salience_effects, income_taxation]
+    key_papers: [farhi_gabaix_2015]
+
+  # ── Tax Salience ──────────────────────────────────────────────────────────
 
   - id: finkelstein_amy
     name: Amy Finkelstein
     affiliation: MIT
-    topics: [tax_salience, program_takeup, sludge_friction]
-    key_papers: [finkelstein_2009, finkelstein_notowidigdo_2019]
+    topics: [salience_effects, program_takeup]
+    key_papers: [finkelstein_2009]
 
-  - id: grubb_michael
-    name: Michael Grubb
-    affiliation: Boston College
-    topics: [shrouded_attributes, present_bias, energy_nudges]
+  # ── Nudges & Defaults ─────────────────────────────────────────────────────
+
+  - id: thaler_richard
+    name: Richard Thaler
+    affiliation: University of Chicago Booth (Nobel 2017)
+    topics: [paternalism, retirement_defaults, present_bias]
+    key_papers: [thaler_sunstein_2003]
+
+  - id: sunstein_cass
+    name: Cass Sunstein
+    affiliation: Harvard Law School
+    topics: [paternalism, admin_burden, nudges_defaults]
+    key_papers: [thaler_sunstein_2003]
 
   - id: madrian_brigitte
     name: Brigitte Madrian
-    affiliation: BYU
-    topics: [retirement_defaults, savings_behavior, nudges_defaults]
-    key_papers: [madrian_shea_2001]
+    affiliation: Brigham Young University
+    topics: [retirement_defaults, savings_behavior]
+    key_papers: [madrian_shea_2001, carroll_etal_2009]
+
+  - id: laibson_david
+    name: David Laibson
+    affiliation: Harvard University
+    topics: [hyperbolic_discounting, savings_behavior, retirement_defaults]
+    key_papers: [laibson_1997, carroll_etal_2009]
+
+  - id: allcott_rogers
+    name: Paul Rogers
+    affiliation: Opower / Oracle
+    topics: [energy_nudges, social_norms]
+    key_papers: [allcott_rogers_2014]
+
+  # ── Saving & Self-Control ─────────────────────────────────────────────────
+
+  - id: ashraf_nava
+    name: Nava Ashraf
+    affiliation: LSE
+    topics: [commitment_devices, savings_behavior, present_bias]
+    key_papers: [ashraf_karlan_yin_2006]
+
+  - id: carroll_gabriel
+    name: Gabriel Carroll
+    affiliation: Stanford University
+    topics: [retirement_defaults, savings_behavior]
+    key_papers: [carroll_etal_2009]
+
+  - id: ambuehl_sandro
+    name: Sandro Ambuehl
+    affiliation: University of Toronto
+    topics: [bias_measurement, savings_behavior]
+    key_papers: [ambuehl_bernheim_lusardi_2017]
+
+  # ── Earnings & Labor ──────────────────────────────────────────────────────
 
   - id: bhargava_saurabh
     name: Saurabh Bhargava
-    affiliation: Carnegie Mellon
-    topics: [program_takeup, admin_burden, tax_salience]
+    affiliation: Carnegie Mellon University
+    topics: [program_takeup, admin_burden, income_taxation]
     key_papers: [bhargava_manoli_2015]
+
+  - id: baicker_katherine
+    name: Katherine Baicker
+    affiliation: University of Chicago
+    topics: [social_insurance, corrective_policy]
+    key_papers: [baicker_mullainathan_schwartzstein_2015]
+
+  - id: spinnewijn_johannes
+    name: Johannes Spinnewijn
+    affiliation: LSE
+    topics: [social_insurance, bias_measurement]
+    key_papers: [spinnewijn_2015]
+
+  - id: bronnenberg_bart
+    name: Bart Bronnenberg
+    affiliation: Tilburg University
+    topics: [bias_measurement, corrective_policy]
+    key_papers: [bronnenberg_etal_2015]

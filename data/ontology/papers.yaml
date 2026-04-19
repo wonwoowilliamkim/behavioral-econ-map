@@ -1,233 +1,386 @@
-# Landmark papers in Behavioral Public Economics
-# Seed list — top journals only
+# Papers cited in Bernheim & Taubinsky (2018) "Behavioral Public Economics"
+# NBER Working Paper 24828 — Handbook of Behavioral Economics, Vol.1
+# Top journals only: AER, QJE, JPE, REStud, Econometrica, JPubE, JEEA, REStat
 
 papers:
 
-  # ── Welfare Analysis ────────────────────────────────────────────────────
+  # ── Section 2: Behavioral Welfare Economics ─────────────────────────────
 
   - id: bernheim_rangel_2009
     title: "Beyond Revealed Preference: Choice-Theoretic Foundations for Behavioral Welfare Economics"
     authors: [Bernheim, Rangel]
     year: 2009
     journal: QJE
-    topics: [welfare_analysis, bpf_framework]
+    section: "§2 Behavioral Welfare Economics"
+    topics: [welfare_analysis, bpf_framework, paternalism]
     url: https://doi.org/10.1162/qjec.2009.124.1.51
     summary: >
-      Proposes a framework for welfare analysis that does not rely on revealed preference
-      when choice data may reflect mistakes. Foundation of behavioral welfare economics.
+      Proposes the Bernheim-Rangel framework for welfare analysis without relying on
+      revealed preference. Introduces the unambiguous choice relation P* as the unique
+      welfare criterion satisfying three basic properties. Foundation of modern behavioral
+      welfare economics.
 
   - id: bernheim_2016
     title: "The Good, the Bad, and the Ugly: A Unified Approach to Behavioral Welfare Economics"
-    authors: [Bernheim, Rangel]
+    authors: [Bernheim]
     year: 2016
-    journal: JPubE
-    topics: [welfare_analysis, paternalism]
+    journal: "Journal of Benefit-Cost Analysis"
+    section: "§2 Behavioral Welfare Economics"
+    topics: [welfare_analysis, paternalism, bpf_framework]
     summary: >
-      Unified framework distinguishing legitimate from illegitimate policy interventions
-      when individuals make mistakes.
+      Refines the Bernheim-Rangel framework. Distinguishes direct vs. indirect judgments,
+      argues that behavioral economics challenges indirect but not direct judgments.
+      Provides revised premises for choice-oriented welfare analysis.
 
   - id: chetty_2015
     title: "Behavioral Economics and Public Policy: A Pragmatic Perspective"
     authors: [Chetty]
     year: 2015
     journal: AER
-    topics: [welfare_analysis, empirical_methods, sufficient_stats]
+    section: "§2 Behavioral Welfare Economics"
+    topics: [welfare_analysis, sufficient_stats, empirical_methods]
     url: https://doi.org/10.1257/aer.p20151108
     summary: >
-      Argues for using sufficient statistics to incorporate behavioral considerations
-      into policy analysis without fully specifying behavioral models.
-
-  # ── Corrective Taxation ─────────────────────────────────────────────────
-
-  - id: allcott_taubinsky_2015
-    title: "Interfering with Consumption: The Morality of Food Taxes"
-    authors: [Allcott, Taubinsky]
-    year: 2015
-    journal: AER
-    topics: [corrective_policy, internality_tax, sin_taxes]
-    url: https://doi.org/10.1257/aer.20140261
-    summary: >
-      Develops the internality framework for corrective taxation. Shows optimal
-      tax = Pigouvian externality component + internality component from self-control failures.
-
-  - id: allcott_lockwood_taubinsky_2019
-    title: "Regressive Sin Taxes, with an Application to the Optimal Soda Tax"
-    authors: [Allcott, Lockwood, Taubinsky]
-    year: 2019
-    journal: QJE
-    topics: [corrective_policy, sin_taxes, internality_tax]
-    url: https://doi.org/10.1093/qje/qjz017
-    summary: >
-      Estimates optimal soda tax accounting for externalities, internalities,
-      and distributional concerns. Finds moderate tax justified despite regressivity.
-
-  - id: gruber_koszegi_2001
-    title: "Is Addiction 'Rational'? Theory and Evidence"
-    authors: [Gruber, Koszegi]
-    year: 2001
-    journal: QJE
-    topics: [corrective_policy, sin_taxes, present_bias]
-    url: https://doi.org/10.1162/003355301753265570
-    summary: >
-      Incorporates time-inconsistent preferences into the rational addiction model.
-      Derives optimal cigarette tax that corrects both externalities and internalities.
-
-  - id: allcott_sunstein_2015
-    title: "Regulating Internalities"
-    authors: [Allcott, Sunstein]
-    year: 2015
-    journal: JPubE
-    topics: [corrective_policy, nudge_vs_tax, internality_tax]
-    url: https://doi.org/10.1016/j.jpubeco.2015.02.001
-    summary: >
-      Framework comparing nudges and taxes for correcting internalities.
-      When is each instrument preferred?
-
-  # ── Nudges & Defaults ───────────────────────────────────────────────────
-
-  - id: madrian_shea_2001
-    title: "The Power of Suggestion: Inertia in 401(k) Participation and Savings Behavior"
-    authors: [Madrian, Shea]
-    year: 2001
-    journal: QJE
-    topics: [nudges_defaults, retirement_defaults]
-    url: https://doi.org/10.1162/003355301753265543
-    summary: >
-      Seminal paper showing auto-enrollment dramatically increases 401(k) participation.
-      Strong evidence for default effects and status quo bias.
-
-  - id: thaler_sunstein_2003
-    title: "Libertarian Paternalism"
-    authors: [Thaler, Sunstein]
-    year: 2003
-    journal: AER
-    topics: [nudges_defaults, paternalism, welfare_analysis]
-    url: https://doi.org/10.1257/000282803321947001
-    summary: >
-      Introduces libertarian paternalism: preserving choice while steering
-      toward better outcomes via defaults and framing.
-
-  - id: allcott_rogers_2014
-    title: "The Short-Run and Long-Run Effects of Behavioral Interventions: Experimental Evidence from Energy Conservation"
-    authors: [Allcott, Rogers]
-    year: 2014
-    journal: AER
-    topics: [nudges_defaults, energy_nudges, social_norms]
-    url: https://doi.org/10.1257/aer.104.10.3003
-    summary: >
-      Evaluates Opower social comparison nudges for energy conservation.
-      Finds significant short-run effects that persist but decay over time.
-
-  - id: duflo_saez_2003
-    title: "The Role of Information and Social Interactions in Retirement Plan Decisions: Evidence from a Randomized Experiment"
-    authors: [Duflo, Saez]
-    year: 2003
-    journal: QJE
-    topics: [nudges_defaults, retirement_defaults, social_norms]
-    url: https://doi.org/10.1162/003355303322552847
-    summary: >
-      RCT showing information and peer effects shape retirement plan choices.
-
-  - id: chetty_friedman_leth_nielsen_2014
-    title: "Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts"
-    authors: [Chetty, Friedman, Leth-Nielsen, Nielsen, Olsen]
-    year: 2014
-    journal: QJE
-    topics: [nudges_defaults, retirement_defaults, present_bias]
-    url: https://doi.org/10.1093/qje/qju013
-    summary: >
-      Using Danish data, shows passive savers respond strongly to defaults
-      while active savers substitute across accounts.
-
-  # ── Sludge & Administrative Burden ─────────────────────────────────────
-
-  - id: linos_et_al_2022
-    title: "Nudging Early Interventions: Behavioral Insights from a Randomized Trial"
-    authors: [Linos, Prochaska, Mahoney]
-    year: 2022
-    journal: AEJ_Applied
-    topics: [sludge_friction, program_takeup, admin_burden]
-    summary: >
-      RCT showing simplification of government forms significantly increases
-      take-up of early childhood programs.
-
-  - id: bhargava_manoli_2015
-    title: "Psychological Frictions and the Incomplete Take-Up of Social Benefits"
-    authors: [Bhargava, Manoli]
-    year: 2015
-    journal: AER
-    topics: [sludge_friction, program_takeup, admin_burden]
-    url: https://doi.org/10.1257/aer.20121493
-    summary: >
-      Field experiment showing that simplifying EITC notices dramatically
-      increases take-up. Psychological frictions, not stigma, are main barrier.
-
-  - id: finkelstein_notowidigdo_2019
-    title: "Take-Up and Targeting: Experimental Evidence from SNAP"
-    authors: [Finkelstein, Notowidigdo]
-    year: 2019
-    journal: QJE
-    topics: [sludge_friction, program_takeup]
-    url: https://doi.org/10.1093/qje/qjz013
-    summary: >
-      Outreach intervention for SNAP increases take-up among eligible non-participants.
-      Marginal enrollees have similar benefits to inframarginal enrollees.
-
-  # ── Present Bias & Self-Control ─────────────────────────────────────────
+      Advocates for the sufficient statistics approach: use reduced-form estimates of
+      behavioral wedges to evaluate policy without fully specifying cognitive models.
+      Frames decision utility vs. experienced utility as alternative welfare foundations.
 
   - id: laibson_1997
     title: "Golden Eggs and Hyperbolic Discounting"
     authors: [Laibson]
     year: 1997
     journal: QJE
+    section: "§2.2.5 Time-Inconsistency; §4 Saving"
     topics: [present_bias, hyperbolic_discounting, savings_behavior]
     url: https://doi.org/10.1162/003355397555253
     summary: >
-      Foundational paper on hyperbolic discounting and illiquid assets as
-      commitment devices. Explains undersaving despite available vehicles.
+      Popularizes the β-δ (quasi-hyperbolic discounting) model. Shows that illiquid
+      assets serve as commitment devices for present-biased consumers. Foundational
+      paper for the self-control literature in behavioral economics.
 
-  - id: ashraf_karlan_yin_2006
-    title: "Tying Odysseus to the Mast: Evidence from a Commitment Savings Product in the Philippines"
-    authors: [Ashraf, Karlan, Yin]
-    year: 2006
-    journal: QJE
-    topics: [present_bias, savings_behavior, commitment_devices]
-    url: https://doi.org/10.1162/qjec.2006.121.2.635
+  - id: gul_pesendorfer_2001
+    title: "Temptation and Self-Control"
+    authors: [Gul, Pesendorfer]
+    year: 2001
+    journal: Econometrica
+    section: "§2.2.2 BRP; §4 Saving"
+    topics: [present_bias, welfare_analysis, savings_behavior]
     summary: >
-      RCT of commitment savings account in Philippines. Demand for commitment
-      devices is strong, particularly among present-biased individuals.
+      Axiomatizes temptation preferences where consumers experience a penalty when
+      choosing anything other than the most tempting option. Accounts for choice
+      reversals without time inconsistency.
 
-  # ── Tax Salience & Complexity ───────────────────────────────────────────
+  # ── Section 3.2: Corrective Taxation ────────────────────────────────────
+
+  - id: allcott_taubinsky_2015
+    title: "Evaluating Behaviorally-Motivated Policy: Experimental Evidence from the Lightbulb Market"
+    authors: [Allcott, Taubinsky]
+    year: 2015
+    journal: AER
+    section: "§3.2 Corrective Taxation"
+    topics: [corrective_policy, internality_tax, bias_measurement]
+    url: https://doi.org/10.1257/aer.20140261
+    summary: >
+      Within-subject experiment on lightbulb purchases. Debiasing intervention reveals
+      consumer undervaluation of energy costs. Derives price-metric bias γ and computes
+      optimal corrective subsidy using the internality framework.
+
+  - id: gruber_koszegi_2001
+    title: "Is Addiction 'Rational'? Theory and Evidence"
+    authors: [Gruber, Koszegi]
+    year: 2001
+    journal: QJE
+    section: "§3.2 Corrective Taxation"
+    topics: [corrective_policy, sin_taxes, present_bias]
+    url: https://doi.org/10.1162/003355301753265570
+    summary: >
+      Incorporates quasi-hyperbolic discounting into the rational addiction model.
+      Derives optimal cigarette tax that corrects both externalities and internalities
+      from self-control failures. Key application of the modified Pigouvian principle.
+
+  - id: gruber_koszegi_2004
+    title: "Tax Incidence when Individuals are Time-Inconsistent: the Case of Cigarette Excise Taxes"
+    authors: [Gruber, Koszegi]
+    year: 2004
+    journal: JPubE
+    section: "§3.3 Distributional Concerns"
+    topics: [corrective_policy, sin_taxes, distributional_concerns]
+    url: https://doi.org/10.1016/j.jpubeco.2003.06.001
+    summary: >
+      Shows that cigarette taxes can be welfare-improving even for low-income consumers
+      when present bias is sufficiently severe and demand is elastic. Addresses the
+      regressivity concern for sin taxes.
+
+  - id: allcott_lockwood_taubinsky_2018
+    title: "Regressive Sin Taxes, with an Application to the Optimal Soda Tax"
+    authors: [Allcott, Lockwood, Taubinsky]
+    year: 2018
+    journal: "QJE (forthcoming)"
+    section: "§3.3 Distributional Concerns"
+    topics: [corrective_policy, sin_taxes, distributional_concerns, internality_tax]
+    summary: >
+      Estimates optimal soda tax accounting for both internalities and externalities.
+      Develops framework for optimal tax when sin goods are regressively consumed.
+      Finds moderate tax justified despite regressivity when corrective benefits dominate.
+
+  - id: odonoghue_rabin_2006
+    title: "Optimal Sin Taxes"
+    authors: [O'Donoghue, Rabin]
+    year: 2006
+    journal: JPubE
+    section: "§3.2 Corrective Taxation"
+    topics: [corrective_policy, sin_taxes, present_bias]
+    url: https://doi.org/10.1016/j.jpubeco.2006.01.006
+    summary: >
+      Studies taxation of unhealthy foods under present-bias. Shows optimal tax is
+      positive whenever present focus causes overconsumption and consumers are
+      price-sensitive. General application of the modified Pigouvian principle.
+
+  - id: allcott_mullainathan_taubinsky_2014
+    title: "Energy Policy with Externalities and Internalities"
+    authors: [Allcott, Mullainathan, Taubinsky]
+    year: 2014
+    journal: JPubE
+    section: "§3.2 Corrective Taxation"
+    topics: [corrective_policy, internality_tax, energy_nudges]
+    summary: >
+      Studies optimal policy mix (energy tax + appliance subsidy) when consumers
+      underweight future energy costs. Key result: optimal energy tax is below the
+      Pigouvian level because standard consumers over-respond to it.
+
+  - id: farhi_gabaix_2015
+    title: "Optimal Taxation with Behavioral Agents"
+    authors: [Farhi, Gabaix]
+    year: 2015
+    journal: "NBER Working Paper 21524"
+    section: "§3 Commodity Taxation; §5 Income Taxation"
+    topics: [corrective_policy, salience_effects, income_taxation]
+    summary: >
+      General framework for optimal taxation with behavioral agents. Derives formulas
+      for both commodity and income taxes that generalize standard sufficient statistics
+      by adding price-metric bias terms. Shows Ramsey-style formulas re-emerge with
+      non-salient commodity taxes.
+
+  - id: bernheim_rangel_2004
+    title: "Addiction and Cue-triggered Decision Processes"
+    authors: [Bernheim, Rangel]
+    year: 2004
+    journal: AER
+    section: "§3.3 Distributional Concerns; §4 Saving"
+    topics: [present_bias, corrective_policy, bpf_framework]
+    summary: >
+      Models addiction as cue-triggered hot states. Argues welfare-relevant domain
+      excludes choices made in triggered states using neurobiological evidence.
+      Derives the surprising result that optimal tax on addictive goods may be negative.
+
+  # ── Section 3.4: Tax Salience ────────────────────────────────────────────
 
   - id: chetty_looney_kroft_2009
     title: "Salience and Taxation: Theory and Evidence"
     authors: [Chetty, Looney, Kroft]
     year: 2009
     journal: AER
-    topics: [tax_salience, salience_effects]
+    section: "§3.4 Tax Salience"
+    topics: [tax_salience, salience_effects, empirical_methods]
     url: https://doi.org/10.1257/aer.99.4.1145
     summary: >
-      Field experiment showing consumers under-react to taxes not included in
-      posted prices. Tax salience affects demand and optimal tax design.
+      Field experiment + natural experiment showing consumers underreact to taxes not
+      included in posted prices (σ ≈ 0.06–0.35). Derives efficiency cost formula showing
+      underreaction reduces deadweight loss through two channels.
 
   - id: finkelstein_2009
-    title: "EZ-Tax: Tax Salience and Tax Rates"
+    title: "E-ZTAX: Tax Salience and Tax Rates"
     authors: [Finkelstein]
     year: 2009
     journal: QJE
+    section: "§3.4 Tax Salience"
     topics: [tax_salience, salience_effects]
     url: https://doi.org/10.1162/qjec.2009.124.3.969
     summary: >
-      Automatic toll collection reduces tax salience, leading to higher tolls.
-      Natural experiment using E-ZPass adoption.
+      Electronic toll collection (E-ZPass) reduces tax salience, leading governments
+      to raise toll rates. Natural experiment showing that salience affects the political
+      economy of taxation.
 
-  - id: stantcheva_2021
-    title: "Understanding Tax Policy: How do People Reason?"
-    authors: [Stantcheva]
-    year: 2021
-    journal: QJE
-    topics: [tax_salience, tax_complexity]
-    url: https://doi.org/10.1093/qje/qjab033
+  # ── Section 3.5: Nudges ──────────────────────────────────────────────────
+
+  - id: thaler_sunstein_2003
+    title: "Libertarian Paternalism"
+    authors: [Thaler, Sunstein]
+    year: 2003
+    journal: AER
+    section: "§3.5 Nudges"
+    topics: [nudges_defaults, paternalism, welfare_analysis]
+    url: https://doi.org/10.1257/000282803321947001
     summary: >
-      Uses surveys to understand how people reason about tax policy.
-      Documents systematic misperceptions about tax incidence and progressivity.
+      Introduces libertarian paternalism: preserving choice while steering people toward
+      better outcomes through defaults and framing. Argues planners inevitably influence
+      choices through defaults, so should do so in welfare-enhancing ways.
+
+  - id: allcott_rogers_2014
+    title: "The Short-Run and Long-Run Effects of Behavioral Interventions: Experimental Evidence from Energy Conservation"
+    authors: [Allcott, Rogers]
+    year: 2014
+    journal: AER
+    section: "§3.5 Nudges"
+    topics: [nudges_defaults, energy_nudges, social_norms]
+    url: https://doi.org/10.1257/aer.104.10.3003
+    summary: >
+      Evaluates Opower social comparison nudges for energy conservation. Finds effects
+      persist but decay over time. Estimates welfare effects of the nudge using
+      willingness-to-pay elicitation.
+
+  # ── Section 4: Policies Targeting Saving ────────────────────────────────
+
+  - id: madrian_shea_2001
+    title: "The Power of Suggestion: Inertia in 401(k) Participation and Savings Behavior"
+    authors: [Madrian, Shea]
+    year: 2001
+    journal: QJE
+    section: "§4.5 Default Options"
+    topics: [nudges_defaults, retirement_defaults, savings_behavior]
+    url: https://doi.org/10.1162/003355301753265543
+    summary: >
+      Seminal paper documenting dramatic default effects in 401(k) enrollment. Auto-
+      enrollment increases participation rates from ~49% to ~86%. First rigorous
+      evidence of status quo bias in retirement savings.
+
+  - id: carroll_etal_2009
+    title: "Optimal Defaults and Active Decisions"
+    authors: [Carroll, Choi, Laibson, Madrian, Metrick]
+    year: 2009
+    journal: QJE
+    section: "§4.5 Default Options"
+    topics: [nudges_defaults, retirement_defaults, welfare_analysis]
+    url: https://doi.org/10.1162/qjec.2009.124.4.1639
+    summary: >
+      Derives optimal 401(k) default contribution rate. Under long-run welfare criterion,
+      sufficiently low β justifies active choice requirements rather than passive defaults.
+      Shows opt-out maximization can be welfare-improving.
+
+  - id: bernheim_fradkin_popov_2015
+    title: "The Welfare Economics of Default Options in 401(k) Plans"
+    authors: [Bernheim, Fradkin, Popov]
+    year: 2015
+    journal: AER
+    section: "§4.5 Default Options"
+    topics: [nudges_defaults, retirement_defaults, welfare_analysis]
+    summary: >
+      Applies Bernheim-Rangel framework to 401(k) defaults. Shows EVA and EVB bounds
+      on welfare effects lead to similar optimal defaults for contribution rates below 20%.
+      Default is generally insensitive to the decision frame in this range.
+
+  - id: ashraf_karlan_yin_2006
+    title: "Tying Odysseus to the Mast: Evidence from a Commitment Savings Product in the Philippines"
+    authors: [Ashraf, Karlan, Yin]
+    year: 2006
+    journal: QJE
+    section: "§4.3 Commitment Features"
+    topics: [present_bias, savings_behavior, commitment_devices]
+    url: https://doi.org/10.1162/qjec.2006.121.2.635
+    summary: >
+      RCT of commitment savings account (SEED) in Philippines. Documents demand for
+      commitment devices, particularly among present-biased individuals. Balance
+      increased 82% relative to control group.
+
+  - id: bernheim_ray_yeltekin_2015
+    title: "Poverty and Self-Control"
+    authors: [Bernheim, Ray, Yeltekin]
+    year: 2015
+    journal: Econometrica
+    section: "§4 Saving"
+    topics: [present_bias, savings_behavior, commitment_devices]
+    summary: >
+      Formalizes internal self-control through history-dependent equilibria. Shows
+      external commitments can undermine internal self-regulation. Low initial assets
+      trap people in poverty by limiting self-control strategies.
+
+  # ── Section 4.5: Program Take-Up ────────────────────────────────────────
+
+  - id: bhargava_manoli_2015
+    title: "Psychological Frictions and the Incomplete Take-Up of Social Benefits"
+    authors: [Bhargava, Manoli]
+    year: 2015
+    journal: AER
+    section: "§5.7 Tax Filing"
+    topics: [sludge_friction, program_takeup, admin_burden]
+    url: https://doi.org/10.1257/aer.20121493
+    summary: >
+      Field experiment on EITC take-up. Simplified notices dramatically increase
+      take-up. Psychological frictions—not stigma—are the main barrier. Addresses
+      the incomplete take-up puzzle for redistributive programs.
+
+  # ── Section 5: Policies Targeting Earnings ──────────────────────────────
+
+  - id: feldman_katuscak_kawano_2016
+    title: "Taxpayer Confusion: Evidence from the Child Tax Credit"
+    authors: [Feldman, Katuscak, Kawano]
+    year: 2016
+    journal: AER
+    section: "§5.3 Tax Misperceptions"
+    topics: [salience_effects, income_taxation, bias_measurement]
+    summary: >
+      RD design showing taxpayers confuse lump-sum transfers with marginal tax changes.
+      Loss of CTC associated with decline in reported wage income, even though CTC is
+      lump-sum and should not affect labor supply incentives.
+
+  - id: baicker_mullainathan_schwartzstein_2015
+    title: "Behavioral Hazard in Health Insurance"
+    authors: [Baicker, Mullainathan, Schwartzstein]
+    year: 2015
+    journal: QJE
+    section: "§5.6 Social Insurance"
+    topics: [corrective_policy, social_insurance, empirical_methods]
+    url: https://doi.org/10.1093/qje/qjv029
+    summary: >
+      Derives optimal copay formula for health insurance with behavioral consumers.
+      Biases can cause over-use of some medications and under-use of others.
+      Extends behavioral public economics framework to health insurance design.
+
+  - id: spinnewijn_2015
+    title: "Unemployed but Optimistic: Optimal Insurance Design with Biased Beliefs"
+    authors: [Spinnewijn]
+    year: 2015
+    journal: JEEA
+    section: "§5.6 Social Insurance"
+    topics: [social_insurance, bias_measurement, empirical_methods]
+    summary: >
+      Modifies Baily-Chetty optimal unemployment insurance formula for biased beliefs
+      about reemployment prospects. Slope effect (return to search) vs. level effect
+      (job-finding probability) have different policy implications.
+
+  - id: bronnenberg_etal_2015
+    title: "Do Pharmacists Buy Bayer? Informed Shoppers and the Brand Premium"
+    authors: [Bronnenberg, Dube, Gentzkow, Shapiro]
+    year: 2015
+    journal: QJE
+    section: "§3.2 Corrective Taxation"
+    topics: [bias_measurement, corrective_policy, empirical_methods]
+    url: https://doi.org/10.1093/qje/qjv024
+    summary: >
+      Pharmacists and doctors buy generic drugs more than laypeople. Uses expert
+      choices as rational consumer benchmark to measure bias from imperfect information.
+      Application of the rational consumer benchmark welfare method.
+
+  - id: ambuehl_bernheim_lusardi_2017
+    title: "A Method for Evaluating the Quality of Financial Decision Making"
+    authors: [Ambuehl, Bernheim, Lusardi]
+    year: 2017
+    journal: "NBER Working Paper 20618"
+    section: "§4.6 Financial Education"
+    topics: [bias_measurement, savings_behavior, empirical_methods]
+    summary: >
+      Introduces financial competence measure based on WTA discrepancies for equivalent
+      claims. Shows standard financial education increases tested knowledge but not
+      decision quality—motivational rhetoric drives behavioral change, not substance.
+
+  - id: allcott_etal_2018_ramsey
+    title: "Ramsey Strikes Back: Optimal Commodity Taxes and Redistribution in the Presence of Salience Effects"
+    authors: [Allcott, Lockwood, Taubinsky]
+    year: 2018
+    journal: "AEA Papers and Proceedings"
+    section: "§5.5 Consumption vs. Income Taxes"
+    topics: [salience_effects, corrective_policy, distributional_concerns]
+    summary: >
+      Shows Atkinson-Stiglitz theorem breaks down with non-salient commodity taxes.
+      Optimal commodity taxes follow Diamond (1975) Many-person Ramsey rule. Differential
+      commodity taxes become useful even when income taxation is available.
