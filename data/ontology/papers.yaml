@@ -384,3 +384,355 @@ papers:
       Shows Atkinson-Stiglitz theorem breaks down with non-salient commodity taxes.
       Optimal commodity taxes follow Diamond (1975) Many-person Ramsey rule. Differential
       commodity taxes become useful even when income taxation is available.
+
+  # ── NBER Boot Camp additions ─────────────────────────────────────────────
+  # Papers from the NBER Behavioral Public Economics Boot Camp reading list
+  # not yet covered by the Bernheim-Taubinsky (2018) handbook section
+
+  # ── Overview ──────────────────────────────────────────────────────────────
+
+  - id: dellavigna_2009
+    title: "Psychology and Economics: Evidence from the Field"
+    authors: [DellaVigna]
+    year: 2009
+    journal: JEL
+    section: "Overview"
+    topics: [welfare_analysis, empirical_methods, rct_field]
+    url: https://doi.org/10.1257/jel.47.2.315
+    summary: >
+      Comprehensive survey of field evidence on behavioral economics: limited attention,
+      non-standard beliefs, and non-standard preferences. Organizes findings around
+      deviations from the standard model and evaluates their policy implications.
+      Gateway reference for the field.
+
+  # ── Tax Misperceptions (Boot Camp starred) ────────────────────────────────
+
+  - id: taubinsky_reesjones_2018
+    title: "Attention Variation and Welfare: Theory and Evidence from a Tax Salience Experiment"
+    authors: [Taubinsky, Rees-Jones]
+    year: 2018
+    journal: REStud
+    section: "Tax Misperceptions"
+    topics: [salience_effects, bias_measurement, empirical_methods]
+    url: https://doi.org/10.1093/restud/rdx069
+    summary: >
+      ★ STARRED. Runs a tax salience experiment with heterogeneous attention. Shows that
+      attention to taxes varies substantially across consumers, and that ignoring this
+      heterogeneity biases welfare calculations. Derives optimal tax formula accounting
+      for attention variation.
+
+  - id: stantcheva_2021
+    title: "Understanding Tax Policy: How Do People Reason?"
+    authors: [Stantcheva]
+    year: 2021
+    journal: QJE
+    section: "Perceptions of Public Policy"
+    topics: [perception_policy, bias_measurement, income_taxation]
+    url: https://doi.org/10.1093/qje/qjab033
+    summary: >
+      ★ STARRED. Uses large-scale survey experiments to study how people reason about
+      tax policy. Finds respondents use "mental frameworks" that shape policy views
+      independently of standard economic logic. Provides new approach to measuring
+      policy perceptions at scale.
+
+  # ── Non-Standard Policy Instruments ──────────────────────────────────────
+
+  - id: thaler_benartzi_2004
+    title: "Save More Tomorrow™: Using Behavioral Economics to Increase Employee Saving"
+    authors: [Thaler, Benartzi]
+    year: 2004
+    journal: JPE
+    section: "§4.5 Default Options"
+    topics: [retirement_defaults, savings_behavior, present_bias]
+    url: https://doi.org/10.1086/380085
+    summary: >
+      Introduces the SMarT (Save More Tomorrow) program: employees commit in advance to
+      automatically increase their 401(k) contribution with each pay raise. Exploits
+      present bias and inertia. Participation rates triple relative to control. Highly
+      influential in policy design.
+
+  - id: chetty_friedman_etal_2014
+    title: "Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts"
+    authors: [Chetty, Friedman, Leth-Petersen, Nielsen, Olsen]
+    year: 2014
+    journal: QJE
+    section: "§4.5 Default Options"
+    topics: [retirement_defaults, savings_behavior, sufficient_stats]
+    url: https://doi.org/10.1093/qje/qju013
+    summary: >
+      Uses Danish administrative data to show 401(k) contributions from automatic
+      employer contributions do not crowd out active saving, while subsidies primarily
+      shift saving across accounts. 85% of people are "passive savers." Implications
+      for optimal retirement savings policy design.
+
+  - id: dellavigna_linos_2022
+    title: "RCTs to Scale: Comprehensive Evidence from Two Nudges Units"
+    authors: [DellaVigna, Linos]
+    year: 2022
+    journal: Econometrica
+    section: "Non-Standard Policy Instruments"
+    topics: [nudges_defaults, rct_field, empirical_methods]
+    url: https://doi.org/10.3982/ECTA18709
+    summary: >
+      Analyzes 126 RCTs run by two large government nudge units. Academic-published
+      nudges have 8× larger effect sizes than unpublished trials — publication bias
+      explains much of the "nudge optimism." Provides calibration for real-world
+      effectiveness of behavioral interventions at scale.
+
+  - id: allcott_kessler_2019
+    title: "The Welfare Effects of Nudges: A Case Study of Energy Use Social Comparisons"
+    authors: [Allcott, Kessler]
+    year: 2019
+    journal: "AEJ: Applied Economics"
+    section: "Non-Standard Policy Instruments"
+    topics: [energy_nudges, nudges_defaults, welfare_analysis]
+    url: https://doi.org/10.1257/app.20170328
+    summary: >
+      Combines Opower energy nudge data with willingness-to-pay elicitation to compute
+      welfare effects. Finds the nudge is welfare-improving but imprecisely targeted:
+      it helps the unbiased as well as the biased, and the WTP for the nudge
+      is on average positive but heterogeneous.
+
+  - id: goldin_reck_2020
+    title: "Revealed Preference Analysis with Framing Effects"
+    authors: [Goldin, Reck]
+    year: 2020
+    journal: JPE
+    section: "Non-Standard Policy Instruments"
+    topics: [welfare_analysis, bpf_framework, salience_effects]
+    url: https://doi.org/10.1086/706767
+    summary: >
+      Extends revealed preference welfare analysis to account for framing effects.
+      Introduces the concept of "frame-invariant preferences" and characterizes when
+      observed choices identify welfare even in the presence of framing. Bridges the
+      Bernheim-Rangel framework and revealed preference.
+
+  - id: butera_etal_2022
+    title: "Measuring the Welfare Effects of Shame and Pride"
+    authors: [Butera, Metcalfe, Morrison, Taubinsky]
+    year: 2022
+    journal: AER
+    section: "Non-Standard Policy Instruments"
+    topics: [welfare_analysis, nudges_defaults, bias_measurement]
+    url: https://doi.org/10.1257/aer.20200751
+    summary: >
+      Develops a method to measure the welfare effects of social image concerns (shame
+      and pride) in behavioral interventions. Uses a within-subject design to elicit WTP
+      for avoiding shame from charitable giving. Shows shame and pride have substantial
+      and heterogeneous welfare effects that standard analyses miss.
+
+  - id: barahona_etal_2021
+    title: "Equilibrium Effects of Food Labeling Policies"
+    authors: [Barahona, Otero, Otero, Kim]
+    year: 2021
+    journal: Econometrica
+    section: "Non-Standard Policy Instruments"
+    topics: [corrective_policy, nudges_defaults, bias_measurement]
+    summary: >
+      Studies Chile's mandatory warning labels on unhealthy foods (the "black octagon"
+      policy). Combines scanner data with a structural model to identify equilibrium
+      effects including firm reformulation responses. Labels reduce unhealthy purchases
+      and trigger substantial product reformulation.
+
+  # ── Insurance ──────────────────────────────────────────────────────────────
+
+  - id: hendren_landais_spinnewijn_2021
+    title: "Choice in Insurance Markets: A Pigouvian Approach to Social Insurance Design"
+    authors: [Hendren, Landais, Spinnewijn]
+    year: 2021
+    journal: "Annual Review of Economics"
+    section: "Insurance"
+    topics: [pigouvian_insurance, insurance, welfare_analysis]
+    url: https://doi.org/10.1146/annurev-economics-082019-110739
+    summary: >
+      ★ STARRED. Develops a Pigouvian framework for social insurance that accounts for
+      behavioral frictions in insurance choice. Distinguishes between private and social
+      valuations of insurance. Shows corrective subsidies are welfare-improving when
+      behavioral frictions cause under-insurance.
+
+  - id: chetty_2008
+    title: "Moral Hazard versus Liquidity and Optimal Unemployment Insurance"
+    authors: [Chetty]
+    year: 2008
+    journal: JPE
+    section: "Insurance"
+    topics: [unemployment_insurance, social_insurance, sufficient_stats]
+    url: https://doi.org/10.1086/588585
+    summary: >
+      Disentangles moral hazard from liquidity effects in unemployment insurance.
+      Shows that most of the consumption-smoothing benefit of UI comes from
+      liquidity, not moral hazard reduction. Implication: optimal UI is higher
+      than traditional models suggest.
+
+  - id: dellavigna_etal_2017
+    title: "Reference-Dependent Job Search: Evidence from Hungary"
+    authors: [DellaVigna, Lindner, Reizer, Schmieder]
+    year: 2017
+    journal: QJE
+    section: "Insurance"
+    topics: [unemployment_insurance, present_bias, bias_measurement]
+    url: https://doi.org/10.1093/qje/qjx025
+    summary: >
+      Uses administrative data from Hungary to show job search effort and re-employment
+      hazard follow reference-dependent patterns. A spike at UI benefit exhaustion
+      is consistent with loss aversion around a reference wage. Structurally estimates
+      a reference-dependent job search model.
+
+  - id: handel_2013
+    title: "Adverse Selection and Inertia in Health Insurance Markets: When Nudging Hurts"
+    authors: [Handel]
+    year: 2013
+    journal: AER
+    section: "Insurance"
+    topics: [health_insurance_choice, adverse_selection_inertia, welfare_analysis]
+    url: https://doi.org/10.1257/aer.103.7.2643
+    summary: >
+      ★ Boot camp key paper. Documents large inertia in health insurance plan choice.
+      Reduced-form and structural evidence that inertia generates adverse selection:
+      inertia keeps healthy individuals in generous plans. Eliminating inertia reduces
+      welfare through adverse selection even as it improves choice quality.
+
+  - id: handel_kolstad_2015
+    title: "Health Insurance for 'Humans': Information Frictions, Plan Choice, and Consumer Welfare"
+    authors: [Handel, Kolstad]
+    year: 2015
+    journal: AER
+    section: "Insurance"
+    topics: [health_insurance_choice, bias_measurement, welfare_analysis]
+    url: https://doi.org/10.1257/aer.20131126
+    summary: >
+      ★ Boot camp key paper. Combines revealed preference data with a survey on plan
+      knowledge to separate information frictions from risk preferences in health
+      insurance choice. Shows that information frictions explain much of the apparent
+      risk aversion. Information provision substantially improves welfare.
+
+  - id: abaluck_gruber_2011
+    title: "Choice Inconsistencies among the Elderly: Evidence from Plan Choice in the Medicare Part D Program"
+    authors: [Abaluck, Gruber]
+    year: 2011
+    journal: AER
+    section: "Insurance"
+    topics: [health_insurance_choice, bias_measurement, welfare_analysis]
+    url: https://doi.org/10.1257/aer.101.4.1180
+    summary: >
+      Reveals systematic choice inconsistencies in Medicare Part D drug plan selection.
+      Enrollees overweight premiums relative to expected out-of-pocket costs and exhibit
+      status quo bias. Implies substantial welfare losses from suboptimal plan choice
+      among the elderly.
+
+  - id: bhargava_loewenstein_sydnor_2017
+    title: "Choose to Lose: Health Plan Choices from a Menu with Dominated Options"
+    authors: [Bhargava, Loewenstein, Sydnor]
+    year: 2017
+    journal: QJE
+    section: "Insurance"
+    topics: [health_insurance_choice, bias_measurement, sludge_friction]
+    url: https://doi.org/10.1093/qje/qjx011
+    summary: >
+      Shows 61% of employees choose dominated health insurance plans. The magnitude
+      of welfare losses is large (hundreds to thousands of dollars). Employees with
+      more education and actuarial training make significantly better choices.
+      Motivates simplification of health insurance menus.
+
+  - id: handel_kolstad_minten_spinnewijn_2021
+    title: "The Social Determinants of Choice Quality: Evidence from Health Insurance in the Netherlands"
+    authors: [Handel, Kolstad, Minten, Spinnewijn]
+    year: 2021
+    journal: "NBER Working Paper"
+    section: "Insurance"
+    topics: [pigouvian_insurance, health_insurance_choice, inequality_mobility]
+    summary: >
+      ★ STARRED. Examines how socioeconomic factors predict health insurance choice
+      quality using Dutch administrative data. Lower-income, less-educated households
+      make systematically worse plan choices. Social determinants of choice quality
+      have strong implications for corrective insurance policy design.
+
+  # ── Inequality & Mobility ─────────────────────────────────────────────────
+
+  - id: bergman_chetty_etal_2020
+    title: "Creating Moves to Opportunity: Experimental Evidence on Barriers to Neighborhood Choice"
+    authors: [Bergman, Chetty, DeLuca, Hendren, Katz, Palmer]
+    year: 2020
+    journal: "NBER Working Paper"
+    section: "Inequality"
+    topics: [neighborhood_effects, program_takeup, admin_burden]
+    url: https://opportunityinsights.org/wp-content/uploads/2019/08/cmto_paper.pdf
+    summary: >
+      ★ STARRED. RCT offering housing search assistance + financial support to
+      voucher-holding families in Seattle. Creates Moves to Opportunity (CMTO) treatment
+      triples the share of families moving to high-opportunity neighborhoods. Shows
+      behavioral barriers — search frictions, limited information — are the key
+      obstacle, not preferences.
+
+  # ── Household Finance ─────────────────────────────────────────────────────
+
+  - id: beshears_etal_2018
+    title: "Behavioral Household Finance"
+    authors: [Beshears, Choi, Laibson, Madrian]
+    year: 2018
+    journal: "Handbook of Behavioral Economics"
+    section: "Household Finance"
+    topics: [liquidity_present_bias, savings_behavior, retirement_defaults]
+    summary: >
+      ★ STARRED. Comprehensive handbook chapter reviewing the behavioral household
+      finance literature. Covers retirement savings, consumer credit, mortgage
+      decisions, and wealth accumulation. Synthesizes findings on present bias,
+      inertia, and limited attention in household financial decisions.
+
+  - id: agarwal_etal_2015
+    title: "Regulating Consumer Financial Products: Evidence from Credit Cards"
+    authors: [Agarwal, Chomsisengphet, Mahoney, Stroebel]
+    year: 2015
+    journal: QJE
+    section: "Household Finance"
+    topics: [consumer_credit, corrective_policy, welfare_analysis]
+    url: https://doi.org/10.1093/qje/qju037
+    summary: >
+      Evaluates the CARD Act of 2009 (credit card regulation) using a regression
+      discontinuity design. Finds the Act reduced fees by $11.9 billion per year
+      with minimal offsetting increases in interest rates. Provides causal evidence
+      that consumer financial protection regulation can improve welfare.
+
+  - id: allcott_kim_taubinsky_zinman_2022
+    title: "Are High-Interest Loans Predatory? Theory and Evidence from Payday Lending"
+    authors: [Allcott, Kim, Taubinsky, Zinman]
+    year: 2022
+    journal: REStud
+    section: "Household Finance"
+    topics: [payday_lending, corrective_policy, bias_measurement]
+    url: https://doi.org/10.1093/restud/rdab066
+    summary: >
+      Develops a framework to evaluate payday lending regulation with behavioral consumers.
+      Uses a within-subject experiment to measure biased beliefs about loan rollovers.
+      Finds meaningful internalities from over-optimism about repayment. Optimal policy
+      depends on whether the goal is correcting biases or reducing prices.
+
+  # ── Behavioral Industrial Organization ────────────────────────────────────
+
+  - id: grubb_2015_jep
+    title: "Overconfident Consumers in the Marketplace"
+    authors: [Grubb]
+    year: 2015
+    journal: JEP
+    section: "Behavioral IO"
+    topics: [overconfidence_markets, shrouded_prices, behavioral_io]
+    url: https://doi.org/10.1257/jep.29.4.9
+    summary: >
+      ★ STARRED. Reviews the literature on overconfident consumers in product markets.
+      Firms exploit consumer overconfidence through shrouded add-on fees, unexpected
+      charges, and complex pricing. Market competition does not eliminate exploitation.
+      Policy interventions (disclosure, mandated simplicity) can improve welfare.
+
+  - id: spinnewijn_2017
+    title: "Heterogeneity, Demand for Insurance, and Adverse Selection"
+    authors: [Spinnewijn]
+    year: 2017
+    journal: "AEJ: Economic Policy"
+    section: "Insurance"
+    topics: [pigouvian_insurance, health_insurance_choice, bias_measurement]
+    url: https://doi.org/10.1257/pol.20140254
+    summary: >
+      Studies adverse selection when consumers have heterogeneous beliefs and risk
+      preferences. Distinguishes between "type" variation (risk aversion, risk level)
+      and "mistake" variation (biased beliefs about risk). Shows that corrective
+      insurance subsidies can be welfare-improving when biased beliefs drive selection.

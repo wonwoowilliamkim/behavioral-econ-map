@@ -232,3 +232,124 @@ topics:
           - Regression discontinuity designs
           - Natural experiments (E-ZPass, 401k plans)
           - Lab-in-the-field methods
+
+  # ── Insurance (NBER Boot Camp §Insurance) ────────────────────────────────
+  - id: insurance
+    label: Behavioral Insurance & Social Insurance
+    color: "#B794F4"
+    handbook_section: "Insurance module"
+    description: >
+      How behavioral frictions — inertia, inattention, biased beliefs, adverse selection —
+      shape insurance markets and social insurance programs. Covers health insurance
+      choice, unemployment insurance design, and the welfare cost of behavioral frictions
+      in insurance markets.
+    subtopics:
+      - id: health_insurance_choice
+        label: Health Insurance Choice & Inertia
+        key_concepts:
+          - Plan switching inertia
+          - Dominated option choice (Medicare Part D)
+          - Information frictions in plan choice
+          - Adverse selection and behavioral frictions
+
+      - id: unemployment_insurance
+        label: Unemployment Insurance & Biased Beliefs
+        key_concepts:
+          - Biased beliefs about reemployment (Spinnewijn)
+          - Moral hazard vs. liquidity (Chetty)
+          - Reference-dependent job search
+          - Modified Baily-Chetty formula
+
+      - id: pigouvian_insurance
+        label: Pigouvian Approach to Insurance Design
+        key_concepts:
+          - Hendren-Landais-Spinnewijn framework
+          - Corrective insurance subsidies
+          - Choice quality determinants
+          - Social determinants of insurance choice
+
+  # ── Household Finance ─────────────────────────────────────────────────────
+  - id: household_finance
+    label: Household Finance & Consumer Credit
+    color: "#F687B3"
+    handbook_section: "Household Finance module"
+    description: >
+      Behavioral dimensions of household financial decisions: credit card debt, payday
+      lending, liquidity constraints, and intertemporal choice in consumer finance.
+      Connects present-bias theory to real-world debt and savings behavior.
+    subtopics:
+      - id: consumer_credit
+        label: Credit Cards & Debt Repayment
+        key_concepts:
+          - Minimum payment anchoring
+          - Balance-matching heuristic
+          - Credit card regulation
+          - Regulating consumer financial products
+
+      - id: payday_lending
+        label: High-Interest Lending
+        key_concepts:
+          - Payday loan welfare effects
+          - Present bias and high-cost borrowing
+          - Consumer protection regulation
+          - Predatory lending debate
+
+      - id: liquidity_present_bias
+        label: Liquidity, Illiquidity & Commitment
+        key_concepts:
+          - Optimal illiquidity (Beshears et al.)
+          - Present bias and balance-sheet channels
+          - Macroeconomic policy implications
+          - Household balance-sheet amplification
+
+  # ── Behavioral Industrial Organization ────────────────────────────────────
+  - id: behavioral_io
+    label: Behavioral Industrial Organization
+    color: "#68D391"
+    handbook_section: "Behavioral IO module"
+    description: >
+      How firm strategies exploit consumer biases: shrouded add-on prices,
+      overconfidence, switching costs, and inattention in product markets.
+      Covers policy interventions in markets with behavioral consumers.
+    subtopics:
+      - id: shrouded_prices
+        label: Shrouded Prices & Add-on Pricing
+        key_concepts:
+          - Heidhues-Kőszegi add-on pricing
+          - Deceptive price framing
+          - Cell phone plan complexity
+          - Market equilibrium with naive consumers
+
+      - id: overconfidence_markets
+        label: Overconfidence in Consumer Markets
+        key_concepts:
+          - Overconfident consumers (Grubb)
+          - Switching costs with biased beliefs
+          - Firm exploitation of overconfidence
+          - Optimal regulation
+
+  # ── Inequality & Mobility ─────────────────────────────────────────────────
+  - id: inequality_mobility
+    label: Inequality, Mobility & Opportunity
+    color: "#FC8181"
+    handbook_section: "Inequality module"
+    description: >
+      Behavioral and structural barriers to economic mobility. How neighborhood effects,
+      information frictions, and administrative barriers prevent low-income households
+      from accessing opportunity.
+    subtopics:
+      - id: neighborhood_effects
+        label: Neighborhood Choice & Opportunity
+        key_concepts:
+          - Moving to Opportunity (MTO) experiment
+          - Creating Moves to Opportunity (CMTO)
+          - Behavioral barriers to neighborhood choice
+          - Information interventions for low-income families
+
+      - id: perception_policy
+        label: Perceptions of Tax & Social Policy
+        key_concepts:
+          - Stantcheva survey experiments
+          - Tax policy reasoning
+          - Redistribution preferences
+          - Understanding policy complexity

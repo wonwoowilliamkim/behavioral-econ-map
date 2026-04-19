@@ -129,14 +129,14 @@ researchers:
   - id: madrian_brigitte
     name: Brigitte Madrian
     affiliation: Brigham Young University
-    topics: [retirement_defaults, savings_behavior]
-    key_papers: [madrian_shea_2001, carroll_etal_2009]
+    topics: [retirement_defaults, savings_behavior, liquidity_present_bias]
+    key_papers: [madrian_shea_2001, carroll_etal_2009, beshears_etal_2018]
 
   - id: laibson_david
     name: David Laibson
     affiliation: Harvard University
-    topics: [hyperbolic_discounting, savings_behavior, retirement_defaults]
-    key_papers: [laibson_1997, carroll_etal_2009]
+    topics: [hyperbolic_discounting, savings_behavior, retirement_defaults, liquidity_present_bias]
+    key_papers: [laibson_1997, carroll_etal_2009, beshears_etal_2018]
 
   - id: allcott_rogers
     name: Paul Rogers
@@ -181,11 +181,135 @@ researchers:
   - id: spinnewijn_johannes
     name: Johannes Spinnewijn
     affiliation: LSE
-    topics: [social_insurance, bias_measurement]
-    key_papers: [spinnewijn_2015]
+    topics: [social_insurance, bias_measurement, pigouvian_insurance, unemployment_insurance]
+    key_papers: [spinnewijn_2015, hendren_landais_spinnewijn_2021, handel_kolstad_minten_spinnewijn_2021, spinnewijn_2017]
 
   - id: bronnenberg_bart
     name: Bart Bronnenberg
     affiliation: Tilburg University
     topics: [bias_measurement, corrective_policy]
     key_papers: [bronnenberg_etal_2015]
+
+  # ── Boot Camp additions ───────────────────────────────────────────────────
+
+  - id: dellavigna_stefano
+    name: Stefano DellaVigna
+    affiliation: UC Berkeley
+    topics: [rct_field, empirical_methods, unemployment_insurance, nudges_defaults]
+    website: https://eml.berkeley.edu/~sdellavi
+    key_papers: [dellavigna_2009, dellavigna_linos_2022, dellavigna_etal_2017]
+
+  - id: rees_jones_alex
+    name: Alex Rees-Jones
+    affiliation: University of Pennsylvania (Wharton)
+    topics: [salience_effects, bias_measurement, income_taxation]
+    key_papers: [taubinsky_reesjones_2018]
+
+  - id: stantcheva_stefanie
+    name: Stefanie Stantcheva
+    affiliation: Harvard University
+    topics: [perception_policy, income_taxation, bias_measurement]
+    website: https://scholar.harvard.edu/stantcheva
+    key_papers: [stantcheva_2021]
+
+  - id: benartzi_shlomo
+    name: Shlomo Benartzi
+    affiliation: UCLA Anderson
+    topics: [retirement_defaults, savings_behavior, present_bias]
+    key_papers: [thaler_benartzi_2004]
+
+  - id: linos_elizabeth
+    name: Elizabeth Linos
+    affiliation: Harvard Kennedy School
+    topics: [rct_field, nudges_defaults, admin_burden]
+    key_papers: [dellavigna_linos_2022]
+
+  - id: kessler_judd
+    name: Judd Kessler
+    affiliation: University of Pennsylvania (Wharton)
+    topics: [energy_nudges, nudges_defaults, welfare_analysis]
+    key_papers: [allcott_kessler_2019]
+
+  - id: goldin_jacob
+    name: Jacob Goldin
+    affiliation: Stanford Law School
+    topics: [welfare_analysis, bpf_framework, salience_effects]
+    key_papers: [goldin_reck_2020]
+
+  - id: reck_daniel
+    name: Daniel Reck
+    affiliation: LSE
+    topics: [welfare_analysis, bpf_framework, salience_effects]
+    key_papers: [goldin_reck_2020]
+
+  - id: handel_benjamin
+    name: Benjamin Handel
+    affiliation: UC Berkeley
+    topics: [health_insurance_choice, adverse_selection_inertia, welfare_analysis]
+    key_papers: [handel_2013, handel_kolstad_2015, handel_kolstad_minten_spinnewijn_2021]
+
+  - id: kolstad_jonathan
+    name: Jonathan Kolstad
+    affiliation: UC Berkeley
+    topics: [health_insurance_choice, bias_measurement, welfare_analysis]
+    key_papers: [handel_kolstad_2015, handel_kolstad_minten_spinnewijn_2021]
+
+  - id: hendren_nathaniel
+    name: Nathaniel Hendren
+    affiliation: Harvard University
+    topics: [pigouvian_insurance, neighborhood_effects, unemployment_insurance]
+    key_papers: [hendren_landais_spinnewijn_2021, bergman_chetty_etal_2020]
+
+  - id: landais_camille
+    name: Camille Landais
+    affiliation: LSE
+    topics: [pigouvian_insurance, unemployment_insurance]
+    key_papers: [hendren_landais_spinnewijn_2021]
+
+  - id: abaluck_jason
+    name: Jason Abaluck
+    affiliation: Yale University
+    topics: [health_insurance_choice, bias_measurement]
+    key_papers: [abaluck_gruber_2011]
+
+  - id: sydnor_justin
+    name: Justin Sydnor
+    affiliation: University of Wisconsin
+    topics: [health_insurance_choice, bias_measurement]
+    key_papers: [bhargava_loewenstein_sydnor_2017]
+
+  - id: loewenstein_george
+    name: George Loewenstein
+    affiliation: Carnegie Mellon University
+    topics: [health_insurance_choice, present_bias, welfare_analysis]
+    key_papers: [bhargava_loewenstein_sydnor_2017]
+
+  - id: agarwal_sumit
+    name: Sumit Agarwal
+    affiliation: National University of Singapore
+    topics: [consumer_credit, corrective_policy]
+    key_papers: [agarwal_etal_2015]
+
+  - id: zinman_jonathan
+    name: Jonathan Zinman
+    affiliation: Dartmouth College
+    topics: [payday_lending, consumer_credit, corrective_policy]
+    key_papers: [allcott_kim_taubinsky_zinman_2022]
+
+  - id: grubb_michael
+    name: Michael Grubb
+    affiliation: Boston College
+    topics: [overconfidence_markets, shrouded_prices, behavioral_io]
+    key_papers: [grubb_2015_jep]
+
+  - id: bergman_peter
+    name: Peter Bergman
+    affiliation: Columbia University
+    topics: [neighborhood_effects, program_takeup]
+    key_papers: [bergman_chetty_etal_2020]
+
+  - id: choi_james
+    name: James Choi
+    affiliation: Yale University
+    topics: [retirement_defaults, savings_behavior, liquidity_present_bias]
+    key_papers: [beshears_etal_2018, chetty_friedman_etal_2014]

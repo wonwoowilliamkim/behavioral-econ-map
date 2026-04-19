@@ -309,6 +309,164 @@
       ]
     },
     {
+      "id": "insurance",
+      "label": "Behavioral Insurance & Social Insurance",
+      "type": "topic",
+      "color": "#B794F4",
+      "description": "How behavioral frictions — inertia, inattention, biased beliefs, adverse selection — shape insurance markets and social insurance programs. Covers health insurance choice, unemployment insurance design, and the welfare cost of behavioral frictions in insurance markets.\n"
+    },
+    {
+      "id": "health_insurance_choice",
+      "label": "Health Insurance Choice & Inertia",
+      "type": "subtopic",
+      "color": "#B794F4",
+      "parent": "insurance",
+      "key_concepts": [
+        "Plan switching inertia",
+        "Dominated option choice (Medicare Part D)",
+        "Information frictions in plan choice",
+        "Adverse selection and behavioral frictions"
+      ]
+    },
+    {
+      "id": "unemployment_insurance",
+      "label": "Unemployment Insurance & Biased Beliefs",
+      "type": "subtopic",
+      "color": "#B794F4",
+      "parent": "insurance",
+      "key_concepts": [
+        "Biased beliefs about reemployment (Spinnewijn)",
+        "Moral hazard vs. liquidity (Chetty)",
+        "Reference-dependent job search",
+        "Modified Baily-Chetty formula"
+      ]
+    },
+    {
+      "id": "pigouvian_insurance",
+      "label": "Pigouvian Approach to Insurance Design",
+      "type": "subtopic",
+      "color": "#B794F4",
+      "parent": "insurance",
+      "key_concepts": [
+        "Hendren-Landais-Spinnewijn framework",
+        "Corrective insurance subsidies",
+        "Choice quality determinants",
+        "Social determinants of insurance choice"
+      ]
+    },
+    {
+      "id": "household_finance",
+      "label": "Household Finance & Consumer Credit",
+      "type": "topic",
+      "color": "#F687B3",
+      "description": "Behavioral dimensions of household financial decisions: credit card debt, payday lending, liquidity constraints, and intertemporal choice in consumer finance. Connects present-bias theory to real-world debt and savings behavior.\n"
+    },
+    {
+      "id": "consumer_credit",
+      "label": "Credit Cards & Debt Repayment",
+      "type": "subtopic",
+      "color": "#F687B3",
+      "parent": "household_finance",
+      "key_concepts": [
+        "Minimum payment anchoring",
+        "Balance-matching heuristic",
+        "Credit card regulation",
+        "Regulating consumer financial products"
+      ]
+    },
+    {
+      "id": "payday_lending",
+      "label": "High-Interest Lending",
+      "type": "subtopic",
+      "color": "#F687B3",
+      "parent": "household_finance",
+      "key_concepts": [
+        "Payday loan welfare effects",
+        "Present bias and high-cost borrowing",
+        "Consumer protection regulation",
+        "Predatory lending debate"
+      ]
+    },
+    {
+      "id": "liquidity_present_bias",
+      "label": "Liquidity, Illiquidity & Commitment",
+      "type": "subtopic",
+      "color": "#F687B3",
+      "parent": "household_finance",
+      "key_concepts": [
+        "Optimal illiquidity (Beshears et al.)",
+        "Present bias and balance-sheet channels",
+        "Macroeconomic policy implications",
+        "Household balance-sheet amplification"
+      ]
+    },
+    {
+      "id": "behavioral_io",
+      "label": "Behavioral Industrial Organization",
+      "type": "topic",
+      "color": "#68D391",
+      "description": "How firm strategies exploit consumer biases: shrouded add-on prices, overconfidence, switching costs, and inattention in product markets. Covers policy interventions in markets with behavioral consumers.\n"
+    },
+    {
+      "id": "shrouded_prices",
+      "label": "Shrouded Prices & Add-on Pricing",
+      "type": "subtopic",
+      "color": "#68D391",
+      "parent": "behavioral_io",
+      "key_concepts": [
+        "Heidhues-Kőszegi add-on pricing",
+        "Deceptive price framing",
+        "Cell phone plan complexity",
+        "Market equilibrium with naive consumers"
+      ]
+    },
+    {
+      "id": "overconfidence_markets",
+      "label": "Overconfidence in Consumer Markets",
+      "type": "subtopic",
+      "color": "#68D391",
+      "parent": "behavioral_io",
+      "key_concepts": [
+        "Overconfident consumers (Grubb)",
+        "Switching costs with biased beliefs",
+        "Firm exploitation of overconfidence",
+        "Optimal regulation"
+      ]
+    },
+    {
+      "id": "inequality_mobility",
+      "label": "Inequality, Mobility & Opportunity",
+      "type": "topic",
+      "color": "#FC8181",
+      "description": "Behavioral and structural barriers to economic mobility. How neighborhood effects, information frictions, and administrative barriers prevent low-income households from accessing opportunity.\n"
+    },
+    {
+      "id": "neighborhood_effects",
+      "label": "Neighborhood Choice & Opportunity",
+      "type": "subtopic",
+      "color": "#FC8181",
+      "parent": "inequality_mobility",
+      "key_concepts": [
+        "Moving to Opportunity (MTO) experiment",
+        "Creating Moves to Opportunity (CMTO)",
+        "Behavioral barriers to neighborhood choice",
+        "Information interventions for low-income families"
+      ]
+    },
+    {
+      "id": "perception_policy",
+      "label": "Perceptions of Tax & Social Policy",
+      "type": "subtopic",
+      "color": "#FC8181",
+      "parent": "inequality_mobility",
+      "key_concepts": [
+        "Stantcheva survey experiments",
+        "Tax policy reasoning",
+        "Redistribution preferences",
+        "Understanding policy complexity"
+      ]
+    },
+    {
       "id": "bernheim_rangel_2009",
       "label": "Beyond Revealed Preference: Choice-Theoretic Foundations for Behavioral Welfare Economics",
       "type": "paper",
@@ -696,6 +854,335 @@
       "summary": "Shows Atkinson-Stiglitz theorem breaks down with non-salient commodity taxes. Optimal commodity taxes follow Diamond (1975) Many-person Ramsey rule. Differential commodity taxes become useful even when income taxation is available."
     },
     {
+      "id": "dellavigna_2009",
+      "label": "Psychology and Economics: Evidence from the Field",
+      "type": "paper",
+      "authors": [
+        "DellaVigna"
+      ],
+      "year": 2009,
+      "journal": "JEL",
+      "url": "https://doi.org/10.1257/jel.47.2.315",
+      "summary": "Comprehensive survey of field evidence on behavioral economics: limited attention, non-standard beliefs, and non-standard preferences. Organizes findings around deviations from the standard model and evaluates their policy implications. Gateway reference for the field."
+    },
+    {
+      "id": "taubinsky_reesjones_2018",
+      "label": "Attention Variation and Welfare: Theory and Evidence from a Tax Salience Experiment",
+      "type": "paper",
+      "authors": [
+        "Taubinsky",
+        "Rees-Jones"
+      ],
+      "year": 2018,
+      "journal": "REStud",
+      "url": "https://doi.org/10.1093/restud/rdx069",
+      "summary": "★ STARRED. Runs a tax salience experiment with heterogeneous attention. Shows that attention to taxes varies substantially across consumers, and that ignoring this heterogeneity biases welfare calculations. Derives optimal tax formula accounting for attention variation."
+    },
+    {
+      "id": "stantcheva_2021",
+      "label": "Understanding Tax Policy: How Do People Reason?",
+      "type": "paper",
+      "authors": [
+        "Stantcheva"
+      ],
+      "year": 2021,
+      "journal": "QJE",
+      "url": "https://doi.org/10.1093/qje/qjab033",
+      "summary": "★ STARRED. Uses large-scale survey experiments to study how people reason about tax policy. Finds respondents use \"mental frameworks\" that shape policy views independently of standard economic logic. Provides new approach to measuring policy perceptions at scale."
+    },
+    {
+      "id": "thaler_benartzi_2004",
+      "label": "Save More Tomorrow™: Using Behavioral Economics to Increase Employee Saving",
+      "type": "paper",
+      "authors": [
+        "Thaler",
+        "Benartzi"
+      ],
+      "year": 2004,
+      "journal": "JPE",
+      "url": "https://doi.org/10.1086/380085",
+      "summary": "Introduces the SMarT (Save More Tomorrow) program: employees commit in advance to automatically increase their 401(k) contribution with each pay raise. Exploits present bias and inertia. Participation rates triple relative to control. Highly influential in policy design."
+    },
+    {
+      "id": "chetty_friedman_etal_2014",
+      "label": "Active vs. Passive Decisions and Crowd-Out in Retirement Savings Accounts",
+      "type": "paper",
+      "authors": [
+        "Chetty",
+        "Friedman",
+        "Leth-Petersen",
+        "Nielsen",
+        "Olsen"
+      ],
+      "year": 2014,
+      "journal": "QJE",
+      "url": "https://doi.org/10.1093/qje/qju013",
+      "summary": "Uses Danish administrative data to show 401(k) contributions from automatic employer contributions do not crowd out active saving, while subsidies primarily shift saving across accounts. 85% of people are \"passive savers.\" Implications for optimal retirement savings policy design."
+    },
+    {
+      "id": "dellavigna_linos_2022",
+      "label": "RCTs to Scale: Comprehensive Evidence from Two Nudges Units",
+      "type": "paper",
+      "authors": [
+        "DellaVigna",
+        "Linos"
+      ],
+      "year": 2022,
+      "journal": "Econometrica",
+      "url": "https://doi.org/10.3982/ECTA18709",
+      "summary": "Analyzes 126 RCTs run by two large government nudge units. Academic-published nudges have 8× larger effect sizes than unpublished trials — publication bias explains much of the \"nudge optimism.\" Provides calibration for real-world effectiveness of behavioral interventions at scale."
+    },
+    {
+      "id": "allcott_kessler_2019",
+      "label": "The Welfare Effects of Nudges: A Case Study of Energy Use Social Comparisons",
+      "type": "paper",
+      "authors": [
+        "Allcott",
+        "Kessler"
+      ],
+      "year": 2019,
+      "journal": "AEJ: Applied Economics",
+      "url": "https://doi.org/10.1257/app.20170328",
+      "summary": "Combines Opower energy nudge data with willingness-to-pay elicitation to compute welfare effects. Finds the nudge is welfare-improving but imprecisely targeted: it helps the unbiased as well as the biased, and the WTP for the nudge is on average positive but heterogeneous."
+    },
+    {
+      "id": "goldin_reck_2020",
+      "label": "Revealed Preference Analysis with Framing Effects",
+      "type": "paper",
+      "authors": [
+        "Goldin",
+        "Reck"
+      ],
+      "year": 2020,
+      "journal": "JPE",
+      "url": "https://doi.org/10.1086/706767",
+      "summary": "Extends revealed preference welfare analysis to account for framing effects. Introduces the concept of \"frame-invariant preferences\" and characterizes when observed choices identify welfare even in the presence of framing. Bridges the Bernheim-Rangel framework and revealed preference."
+    },
+    {
+      "id": "butera_etal_2022",
+      "label": "Measuring the Welfare Effects of Shame and Pride",
+      "type": "paper",
+      "authors": [
+        "Butera",
+        "Metcalfe",
+        "Morrison",
+        "Taubinsky"
+      ],
+      "year": 2022,
+      "journal": "AER",
+      "url": "https://doi.org/10.1257/aer.20200751",
+      "summary": "Develops a method to measure the welfare effects of social image concerns (shame and pride) in behavioral interventions. Uses a within-subject design to elicit WTP for avoiding shame from charitable giving. Shows shame and pride have substantial and heterogeneous welfare effects that standard analyses miss."
+    },
+    {
+      "id": "barahona_etal_2021",
+      "label": "Equilibrium Effects of Food Labeling Policies",
+      "type": "paper",
+      "authors": [
+        "Barahona",
+        "Otero",
+        "Otero",
+        "Kim"
+      ],
+      "year": 2021,
+      "journal": "Econometrica",
+      "url": "",
+      "summary": "Studies Chile's mandatory warning labels on unhealthy foods (the \"black octagon\" policy). Combines scanner data with a structural model to identify equilibrium effects including firm reformulation responses. Labels reduce unhealthy purchases and trigger substantial product reformulation."
+    },
+    {
+      "id": "hendren_landais_spinnewijn_2021",
+      "label": "Choice in Insurance Markets: A Pigouvian Approach to Social Insurance Design",
+      "type": "paper",
+      "authors": [
+        "Hendren",
+        "Landais",
+        "Spinnewijn"
+      ],
+      "year": 2021,
+      "journal": "Annual Review of Economics",
+      "url": "https://doi.org/10.1146/annurev-economics-082019-110739",
+      "summary": "★ STARRED. Develops a Pigouvian framework for social insurance that accounts for behavioral frictions in insurance choice. Distinguishes between private and social valuations of insurance. Shows corrective subsidies are welfare-improving when behavioral frictions cause under-insurance."
+    },
+    {
+      "id": "chetty_2008",
+      "label": "Moral Hazard versus Liquidity and Optimal Unemployment Insurance",
+      "type": "paper",
+      "authors": [
+        "Chetty"
+      ],
+      "year": 2008,
+      "journal": "JPE",
+      "url": "https://doi.org/10.1086/588585",
+      "summary": "Disentangles moral hazard from liquidity effects in unemployment insurance. Shows that most of the consumption-smoothing benefit of UI comes from liquidity, not moral hazard reduction. Implication: optimal UI is higher than traditional models suggest."
+    },
+    {
+      "id": "dellavigna_etal_2017",
+      "label": "Reference-Dependent Job Search: Evidence from Hungary",
+      "type": "paper",
+      "authors": [
+        "DellaVigna",
+        "Lindner",
+        "Reizer",
+        "Schmieder"
+      ],
+      "year": 2017,
+      "journal": "QJE",
+      "url": "https://doi.org/10.1093/qje/qjx025",
+      "summary": "Uses administrative data from Hungary to show job search effort and re-employment hazard follow reference-dependent patterns. A spike at UI benefit exhaustion is consistent with loss aversion around a reference wage. Structurally estimates a reference-dependent job search model."
+    },
+    {
+      "id": "handel_2013",
+      "label": "Adverse Selection and Inertia in Health Insurance Markets: When Nudging Hurts",
+      "type": "paper",
+      "authors": [
+        "Handel"
+      ],
+      "year": 2013,
+      "journal": "AER",
+      "url": "https://doi.org/10.1257/aer.103.7.2643",
+      "summary": "★ Boot camp key paper. Documents large inertia in health insurance plan choice. Reduced-form and structural evidence that inertia generates adverse selection: inertia keeps healthy individuals in generous plans. Eliminating inertia reduces welfare through adverse selection even as it improves choice quality."
+    },
+    {
+      "id": "handel_kolstad_2015",
+      "label": "Health Insurance for 'Humans': Information Frictions, Plan Choice, and Consumer Welfare",
+      "type": "paper",
+      "authors": [
+        "Handel",
+        "Kolstad"
+      ],
+      "year": 2015,
+      "journal": "AER",
+      "url": "https://doi.org/10.1257/aer.20131126",
+      "summary": "★ Boot camp key paper. Combines revealed preference data with a survey on plan knowledge to separate information frictions from risk preferences in health insurance choice. Shows that information frictions explain much of the apparent risk aversion. Information provision substantially improves welfare."
+    },
+    {
+      "id": "abaluck_gruber_2011",
+      "label": "Choice Inconsistencies among the Elderly: Evidence from Plan Choice in the Medicare Part D Program",
+      "type": "paper",
+      "authors": [
+        "Abaluck",
+        "Gruber"
+      ],
+      "year": 2011,
+      "journal": "AER",
+      "url": "https://doi.org/10.1257/aer.101.4.1180",
+      "summary": "Reveals systematic choice inconsistencies in Medicare Part D drug plan selection. Enrollees overweight premiums relative to expected out-of-pocket costs and exhibit status quo bias. Implies substantial welfare losses from suboptimal plan choice among the elderly."
+    },
+    {
+      "id": "bhargava_loewenstein_sydnor_2017",
+      "label": "Choose to Lose: Health Plan Choices from a Menu with Dominated Options",
+      "type": "paper",
+      "authors": [
+        "Bhargava",
+        "Loewenstein",
+        "Sydnor"
+      ],
+      "year": 2017,
+      "journal": "QJE",
+      "url": "https://doi.org/10.1093/qje/qjx011",
+      "summary": "Shows 61% of employees choose dominated health insurance plans. The magnitude of welfare losses is large (hundreds to thousands of dollars). Employees with more education and actuarial training make significantly better choices. Motivates simplification of health insurance menus."
+    },
+    {
+      "id": "handel_kolstad_minten_spinnewijn_2021",
+      "label": "The Social Determinants of Choice Quality: Evidence from Health Insurance in the Netherlands",
+      "type": "paper",
+      "authors": [
+        "Handel",
+        "Kolstad",
+        "Minten",
+        "Spinnewijn"
+      ],
+      "year": 2021,
+      "journal": "NBER Working Paper",
+      "url": "",
+      "summary": "★ STARRED. Examines how socioeconomic factors predict health insurance choice quality using Dutch administrative data. Lower-income, less-educated households make systematically worse plan choices. Social determinants of choice quality have strong implications for corrective insurance policy design."
+    },
+    {
+      "id": "bergman_chetty_etal_2020",
+      "label": "Creating Moves to Opportunity: Experimental Evidence on Barriers to Neighborhood Choice",
+      "type": "paper",
+      "authors": [
+        "Bergman",
+        "Chetty",
+        "DeLuca",
+        "Hendren",
+        "Katz",
+        "Palmer"
+      ],
+      "year": 2020,
+      "journal": "NBER Working Paper",
+      "url": "https://opportunityinsights.org/wp-content/uploads/2019/08/cmto_paper.pdf",
+      "summary": "★ STARRED. RCT offering housing search assistance + financial support to voucher-holding families in Seattle. Creates Moves to Opportunity (CMTO) treatment triples the share of families moving to high-opportunity neighborhoods. Shows behavioral barriers — search frictions, limited information — are the key obstacle, not preferences."
+    },
+    {
+      "id": "beshears_etal_2018",
+      "label": "Behavioral Household Finance",
+      "type": "paper",
+      "authors": [
+        "Beshears",
+        "Choi",
+        "Laibson",
+        "Madrian"
+      ],
+      "year": 2018,
+      "journal": "Handbook of Behavioral Economics",
+      "url": "",
+      "summary": "★ STARRED. Comprehensive handbook chapter reviewing the behavioral household finance literature. Covers retirement savings, consumer credit, mortgage decisions, and wealth accumulation. Synthesizes findings on present bias, inertia, and limited attention in household financial decisions."
+    },
+    {
+      "id": "agarwal_etal_2015",
+      "label": "Regulating Consumer Financial Products: Evidence from Credit Cards",
+      "type": "paper",
+      "authors": [
+        "Agarwal",
+        "Chomsisengphet",
+        "Mahoney",
+        "Stroebel"
+      ],
+      "year": 2015,
+      "journal": "QJE",
+      "url": "https://doi.org/10.1093/qje/qju037",
+      "summary": "Evaluates the CARD Act of 2009 (credit card regulation) using a regression discontinuity design. Finds the Act reduced fees by $11.9 billion per year with minimal offsetting increases in interest rates. Provides causal evidence that consumer financial protection regulation can improve welfare."
+    },
+    {
+      "id": "allcott_kim_taubinsky_zinman_2022",
+      "label": "Are High-Interest Loans Predatory? Theory and Evidence from Payday Lending",
+      "type": "paper",
+      "authors": [
+        "Allcott",
+        "Kim",
+        "Taubinsky",
+        "Zinman"
+      ],
+      "year": 2022,
+      "journal": "REStud",
+      "url": "https://doi.org/10.1093/restud/rdab066",
+      "summary": "Develops a framework to evaluate payday lending regulation with behavioral consumers. Uses a within-subject experiment to measure biased beliefs about loan rollovers. Finds meaningful internalities from over-optimism about repayment. Optimal policy depends on whether the goal is correcting biases or reducing prices."
+    },
+    {
+      "id": "grubb_2015_jep",
+      "label": "Overconfident Consumers in the Marketplace",
+      "type": "paper",
+      "authors": [
+        "Grubb"
+      ],
+      "year": 2015,
+      "journal": "JEP",
+      "url": "https://doi.org/10.1257/jep.29.4.9",
+      "summary": "★ STARRED. Reviews the literature on overconfident consumers in product markets. Firms exploit consumer overconfidence through shrouded add-on fees, unexpected charges, and complex pricing. Market competition does not eliminate exploitation. Policy interventions (disclosure, mandated simplicity) can improve welfare."
+    },
+    {
+      "id": "spinnewijn_2017",
+      "label": "Heterogeneity, Demand for Insurance, and Adverse Selection",
+      "type": "paper",
+      "authors": [
+        "Spinnewijn"
+      ],
+      "year": 2017,
+      "journal": "AEJ: Economic Policy",
+      "url": "https://doi.org/10.1257/pol.20140254",
+      "summary": "Studies adverse selection when consumers have heterogeneous beliefs and risk preferences. Distinguishes between \"type\" variation (risk aversion, risk level) and \"mistake\" variation (biased beliefs about risk). Shows that corrective insurance subsidies can be welfare-improving when biased beliefs drive selection."
+    },
+    {
       "id": "bernheim_doug",
       "label": "B. Douglas Bernheim",
       "type": "researcher",
@@ -890,6 +1377,146 @@
       "type": "researcher",
       "affiliation": "Tilburg University",
       "website": ""
+    },
+    {
+      "id": "dellavigna_stefano",
+      "label": "Stefano DellaVigna",
+      "type": "researcher",
+      "affiliation": "UC Berkeley",
+      "website": "https://eml.berkeley.edu/~sdellavi"
+    },
+    {
+      "id": "rees_jones_alex",
+      "label": "Alex Rees-Jones",
+      "type": "researcher",
+      "affiliation": "University of Pennsylvania (Wharton)",
+      "website": ""
+    },
+    {
+      "id": "stantcheva_stefanie",
+      "label": "Stefanie Stantcheva",
+      "type": "researcher",
+      "affiliation": "Harvard University",
+      "website": "https://scholar.harvard.edu/stantcheva"
+    },
+    {
+      "id": "benartzi_shlomo",
+      "label": "Shlomo Benartzi",
+      "type": "researcher",
+      "affiliation": "UCLA Anderson",
+      "website": ""
+    },
+    {
+      "id": "linos_elizabeth",
+      "label": "Elizabeth Linos",
+      "type": "researcher",
+      "affiliation": "Harvard Kennedy School",
+      "website": ""
+    },
+    {
+      "id": "kessler_judd",
+      "label": "Judd Kessler",
+      "type": "researcher",
+      "affiliation": "University of Pennsylvania (Wharton)",
+      "website": ""
+    },
+    {
+      "id": "goldin_jacob",
+      "label": "Jacob Goldin",
+      "type": "researcher",
+      "affiliation": "Stanford Law School",
+      "website": ""
+    },
+    {
+      "id": "reck_daniel",
+      "label": "Daniel Reck",
+      "type": "researcher",
+      "affiliation": "LSE",
+      "website": ""
+    },
+    {
+      "id": "handel_benjamin",
+      "label": "Benjamin Handel",
+      "type": "researcher",
+      "affiliation": "UC Berkeley",
+      "website": ""
+    },
+    {
+      "id": "kolstad_jonathan",
+      "label": "Jonathan Kolstad",
+      "type": "researcher",
+      "affiliation": "UC Berkeley",
+      "website": ""
+    },
+    {
+      "id": "hendren_nathaniel",
+      "label": "Nathaniel Hendren",
+      "type": "researcher",
+      "affiliation": "Harvard University",
+      "website": ""
+    },
+    {
+      "id": "landais_camille",
+      "label": "Camille Landais",
+      "type": "researcher",
+      "affiliation": "LSE",
+      "website": ""
+    },
+    {
+      "id": "abaluck_jason",
+      "label": "Jason Abaluck",
+      "type": "researcher",
+      "affiliation": "Yale University",
+      "website": ""
+    },
+    {
+      "id": "sydnor_justin",
+      "label": "Justin Sydnor",
+      "type": "researcher",
+      "affiliation": "University of Wisconsin",
+      "website": ""
+    },
+    {
+      "id": "loewenstein_george",
+      "label": "George Loewenstein",
+      "type": "researcher",
+      "affiliation": "Carnegie Mellon University",
+      "website": ""
+    },
+    {
+      "id": "agarwal_sumit",
+      "label": "Sumit Agarwal",
+      "type": "researcher",
+      "affiliation": "National University of Singapore",
+      "website": ""
+    },
+    {
+      "id": "zinman_jonathan",
+      "label": "Jonathan Zinman",
+      "type": "researcher",
+      "affiliation": "Dartmouth College",
+      "website": ""
+    },
+    {
+      "id": "grubb_michael",
+      "label": "Michael Grubb",
+      "type": "researcher",
+      "affiliation": "Boston College",
+      "website": ""
+    },
+    {
+      "id": "bergman_peter",
+      "label": "Peter Bergman",
+      "type": "researcher",
+      "affiliation": "Columbia University",
+      "website": ""
+    },
+    {
+      "id": "choi_james",
+      "label": "James Choi",
+      "type": "researcher",
+      "affiliation": "Yale University",
+      "website": ""
     }
   ],
   "links": [
@@ -991,6 +1618,56 @@
     {
       "source": "empirical_methods",
       "target": "rct_field",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "insurance",
+      "target": "health_insurance_choice",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "insurance",
+      "target": "unemployment_insurance",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "insurance",
+      "target": "pigouvian_insurance",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "household_finance",
+      "target": "consumer_credit",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "household_finance",
+      "target": "payday_lending",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "household_finance",
+      "target": "liquidity_present_bias",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "behavioral_io",
+      "target": "shrouded_prices",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "behavioral_io",
+      "target": "overconfidence_markets",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "inequality_mobility",
+      "target": "neighborhood_effects",
+      "type": "has_subtopic"
+    },
+    {
+      "source": "inequality_mobility",
+      "target": "perception_policy",
       "type": "has_subtopic"
     },
     {
@@ -1416,6 +2093,361 @@
     {
       "source": "allcott_etal_2018_ramsey",
       "target": "distributional_concerns",
+      "type": "covers_topic"
+    },
+    {
+      "source": "dellavigna_2009",
+      "target": "welfare_analysis",
+      "type": "covers_topic"
+    },
+    {
+      "source": "dellavigna_2009",
+      "target": "empirical_methods",
+      "type": "covers_topic"
+    },
+    {
+      "source": "dellavigna_2009",
+      "target": "rct_field",
+      "type": "covers_topic"
+    },
+    {
+      "source": "taubinsky_reesjones_2018",
+      "target": "salience_effects",
+      "type": "covers_topic"
+    },
+    {
+      "source": "taubinsky_reesjones_2018",
+      "target": "bias_measurement",
+      "type": "covers_topic"
+    },
+    {
+      "source": "taubinsky_reesjones_2018",
+      "target": "empirical_methods",
+      "type": "covers_topic"
+    },
+    {
+      "source": "stantcheva_2021",
+      "target": "perception_policy",
+      "type": "covers_topic"
+    },
+    {
+      "source": "stantcheva_2021",
+      "target": "bias_measurement",
+      "type": "covers_topic"
+    },
+    {
+      "source": "stantcheva_2021",
+      "target": "income_taxation",
+      "type": "covers_topic"
+    },
+    {
+      "source": "thaler_benartzi_2004",
+      "target": "retirement_defaults",
+      "type": "covers_topic"
+    },
+    {
+      "source": "thaler_benartzi_2004",
+      "target": "savings_behavior",
+      "type": "covers_topic"
+    },
+    {
+      "source": "thaler_benartzi_2004",
+      "target": "present_bias",
+      "type": "covers_topic"
+    },
+    {
+      "source": "chetty_friedman_etal_2014",
+      "target": "retirement_defaults",
+      "type": "covers_topic"
+    },
+    {
+      "source": "chetty_friedman_etal_2014",
+      "target": "savings_behavior",
+      "type": "covers_topic"
+    },
+    {
+      "source": "chetty_friedman_etal_2014",
+      "target": "sufficient_stats",
+      "type": "covers_topic"
+    },
+    {
+      "source": "dellavigna_linos_2022",
+      "target": "nudges_defaults",
+      "type": "covers_topic"
+    },
+    {
+      "source": "dellavigna_linos_2022",
+      "target": "rct_field",
+      "type": "covers_topic"
+    },
+    {
+      "source": "dellavigna_linos_2022",
+      "target": "empirical_methods",
+      "type": "covers_topic"
+    },
+    {
+      "source": "allcott_kessler_2019",
+      "target": "energy_nudges",
+      "type": "covers_topic"
+    },
+    {
+      "source": "allcott_kessler_2019",
+      "target": "nudges_defaults",
+      "type": "covers_topic"
+    },
+    {
+      "source": "allcott_kessler_2019",
+      "target": "welfare_analysis",
+      "type": "covers_topic"
+    },
+    {
+      "source": "goldin_reck_2020",
+      "target": "welfare_analysis",
+      "type": "covers_topic"
+    },
+    {
+      "source": "goldin_reck_2020",
+      "target": "bpf_framework",
+      "type": "covers_topic"
+    },
+    {
+      "source": "goldin_reck_2020",
+      "target": "salience_effects",
+      "type": "covers_topic"
+    },
+    {
+      "source": "butera_etal_2022",
+      "target": "welfare_analysis",
+      "type": "covers_topic"
+    },
+    {
+      "source": "butera_etal_2022",
+      "target": "nudges_defaults",
+      "type": "covers_topic"
+    },
+    {
+      "source": "butera_etal_2022",
+      "target": "bias_measurement",
+      "type": "covers_topic"
+    },
+    {
+      "source": "barahona_etal_2021",
+      "target": "corrective_policy",
+      "type": "covers_topic"
+    },
+    {
+      "source": "barahona_etal_2021",
+      "target": "nudges_defaults",
+      "type": "covers_topic"
+    },
+    {
+      "source": "barahona_etal_2021",
+      "target": "bias_measurement",
+      "type": "covers_topic"
+    },
+    {
+      "source": "hendren_landais_spinnewijn_2021",
+      "target": "pigouvian_insurance",
+      "type": "covers_topic"
+    },
+    {
+      "source": "hendren_landais_spinnewijn_2021",
+      "target": "insurance",
+      "type": "covers_topic"
+    },
+    {
+      "source": "hendren_landais_spinnewijn_2021",
+      "target": "welfare_analysis",
+      "type": "covers_topic"
+    },
+    {
+      "source": "chetty_2008",
+      "target": "unemployment_insurance",
+      "type": "covers_topic"
+    },
+    {
+      "source": "chetty_2008",
+      "target": "social_insurance",
+      "type": "covers_topic"
+    },
+    {
+      "source": "chetty_2008",
+      "target": "sufficient_stats",
+      "type": "covers_topic"
+    },
+    {
+      "source": "dellavigna_etal_2017",
+      "target": "unemployment_insurance",
+      "type": "covers_topic"
+    },
+    {
+      "source": "dellavigna_etal_2017",
+      "target": "present_bias",
+      "type": "covers_topic"
+    },
+    {
+      "source": "dellavigna_etal_2017",
+      "target": "bias_measurement",
+      "type": "covers_topic"
+    },
+    {
+      "source": "handel_2013",
+      "target": "health_insurance_choice",
+      "type": "covers_topic"
+    },
+    {
+      "source": "handel_2013",
+      "target": "welfare_analysis",
+      "type": "covers_topic"
+    },
+    {
+      "source": "handel_kolstad_2015",
+      "target": "health_insurance_choice",
+      "type": "covers_topic"
+    },
+    {
+      "source": "handel_kolstad_2015",
+      "target": "bias_measurement",
+      "type": "covers_topic"
+    },
+    {
+      "source": "handel_kolstad_2015",
+      "target": "welfare_analysis",
+      "type": "covers_topic"
+    },
+    {
+      "source": "abaluck_gruber_2011",
+      "target": "health_insurance_choice",
+      "type": "covers_topic"
+    },
+    {
+      "source": "abaluck_gruber_2011",
+      "target": "bias_measurement",
+      "type": "covers_topic"
+    },
+    {
+      "source": "abaluck_gruber_2011",
+      "target": "welfare_analysis",
+      "type": "covers_topic"
+    },
+    {
+      "source": "bhargava_loewenstein_sydnor_2017",
+      "target": "health_insurance_choice",
+      "type": "covers_topic"
+    },
+    {
+      "source": "bhargava_loewenstein_sydnor_2017",
+      "target": "bias_measurement",
+      "type": "covers_topic"
+    },
+    {
+      "source": "bhargava_loewenstein_sydnor_2017",
+      "target": "sludge_friction",
+      "type": "covers_topic"
+    },
+    {
+      "source": "handel_kolstad_minten_spinnewijn_2021",
+      "target": "pigouvian_insurance",
+      "type": "covers_topic"
+    },
+    {
+      "source": "handel_kolstad_minten_spinnewijn_2021",
+      "target": "health_insurance_choice",
+      "type": "covers_topic"
+    },
+    {
+      "source": "handel_kolstad_minten_spinnewijn_2021",
+      "target": "inequality_mobility",
+      "type": "covers_topic"
+    },
+    {
+      "source": "bergman_chetty_etal_2020",
+      "target": "neighborhood_effects",
+      "type": "covers_topic"
+    },
+    {
+      "source": "bergman_chetty_etal_2020",
+      "target": "program_takeup",
+      "type": "covers_topic"
+    },
+    {
+      "source": "bergman_chetty_etal_2020",
+      "target": "admin_burden",
+      "type": "covers_topic"
+    },
+    {
+      "source": "beshears_etal_2018",
+      "target": "liquidity_present_bias",
+      "type": "covers_topic"
+    },
+    {
+      "source": "beshears_etal_2018",
+      "target": "savings_behavior",
+      "type": "covers_topic"
+    },
+    {
+      "source": "beshears_etal_2018",
+      "target": "retirement_defaults",
+      "type": "covers_topic"
+    },
+    {
+      "source": "agarwal_etal_2015",
+      "target": "consumer_credit",
+      "type": "covers_topic"
+    },
+    {
+      "source": "agarwal_etal_2015",
+      "target": "corrective_policy",
+      "type": "covers_topic"
+    },
+    {
+      "source": "agarwal_etal_2015",
+      "target": "welfare_analysis",
+      "type": "covers_topic"
+    },
+    {
+      "source": "allcott_kim_taubinsky_zinman_2022",
+      "target": "payday_lending",
+      "type": "covers_topic"
+    },
+    {
+      "source": "allcott_kim_taubinsky_zinman_2022",
+      "target": "corrective_policy",
+      "type": "covers_topic"
+    },
+    {
+      "source": "allcott_kim_taubinsky_zinman_2022",
+      "target": "bias_measurement",
+      "type": "covers_topic"
+    },
+    {
+      "source": "grubb_2015_jep",
+      "target": "overconfidence_markets",
+      "type": "covers_topic"
+    },
+    {
+      "source": "grubb_2015_jep",
+      "target": "shrouded_prices",
+      "type": "covers_topic"
+    },
+    {
+      "source": "grubb_2015_jep",
+      "target": "behavioral_io",
+      "type": "covers_topic"
+    },
+    {
+      "source": "spinnewijn_2017",
+      "target": "pigouvian_insurance",
+      "type": "covers_topic"
+    },
+    {
+      "source": "spinnewijn_2017",
+      "target": "health_insurance_choice",
+      "type": "covers_topic"
+    },
+    {
+      "source": "spinnewijn_2017",
+      "target": "bias_measurement",
       "type": "covers_topic"
     },
     {
@@ -1910,12 +2942,22 @@
     },
     {
       "source": "madrian_brigitte",
+      "target": "liquidity_present_bias",
+      "type": "researches"
+    },
+    {
+      "source": "madrian_brigitte",
       "target": "madrian_shea_2001",
       "type": "authored"
     },
     {
       "source": "madrian_brigitte",
       "target": "carroll_etal_2009",
+      "type": "authored"
+    },
+    {
+      "source": "madrian_brigitte",
+      "target": "beshears_etal_2018",
       "type": "authored"
     },
     {
@@ -1935,12 +2977,22 @@
     },
     {
       "source": "laibson_david",
+      "target": "liquidity_present_bias",
+      "type": "researches"
+    },
+    {
+      "source": "laibson_david",
       "target": "laibson_1997",
       "type": "authored"
     },
     {
       "source": "laibson_david",
       "target": "carroll_etal_2009",
+      "type": "authored"
+    },
+    {
+      "source": "laibson_david",
+      "target": "beshears_etal_2018",
       "type": "authored"
     },
     {
@@ -2055,7 +3107,32 @@
     },
     {
       "source": "spinnewijn_johannes",
+      "target": "pigouvian_insurance",
+      "type": "researches"
+    },
+    {
+      "source": "spinnewijn_johannes",
+      "target": "unemployment_insurance",
+      "type": "researches"
+    },
+    {
+      "source": "spinnewijn_johannes",
       "target": "spinnewijn_2015",
+      "type": "authored"
+    },
+    {
+      "source": "spinnewijn_johannes",
+      "target": "hendren_landais_spinnewijn_2021",
+      "type": "authored"
+    },
+    {
+      "source": "spinnewijn_johannes",
+      "target": "handel_kolstad_minten_spinnewijn_2021",
+      "type": "authored"
+    },
+    {
+      "source": "spinnewijn_johannes",
+      "target": "spinnewijn_2017",
       "type": "authored"
     },
     {
@@ -2071,6 +3148,416 @@
     {
       "source": "bronnenberg_bart",
       "target": "bronnenberg_etal_2015",
+      "type": "authored"
+    },
+    {
+      "source": "dellavigna_stefano",
+      "target": "rct_field",
+      "type": "researches"
+    },
+    {
+      "source": "dellavigna_stefano",
+      "target": "empirical_methods",
+      "type": "researches"
+    },
+    {
+      "source": "dellavigna_stefano",
+      "target": "unemployment_insurance",
+      "type": "researches"
+    },
+    {
+      "source": "dellavigna_stefano",
+      "target": "nudges_defaults",
+      "type": "researches"
+    },
+    {
+      "source": "dellavigna_stefano",
+      "target": "dellavigna_2009",
+      "type": "authored"
+    },
+    {
+      "source": "dellavigna_stefano",
+      "target": "dellavigna_linos_2022",
+      "type": "authored"
+    },
+    {
+      "source": "dellavigna_stefano",
+      "target": "dellavigna_etal_2017",
+      "type": "authored"
+    },
+    {
+      "source": "rees_jones_alex",
+      "target": "salience_effects",
+      "type": "researches"
+    },
+    {
+      "source": "rees_jones_alex",
+      "target": "bias_measurement",
+      "type": "researches"
+    },
+    {
+      "source": "rees_jones_alex",
+      "target": "income_taxation",
+      "type": "researches"
+    },
+    {
+      "source": "rees_jones_alex",
+      "target": "taubinsky_reesjones_2018",
+      "type": "authored"
+    },
+    {
+      "source": "stantcheva_stefanie",
+      "target": "perception_policy",
+      "type": "researches"
+    },
+    {
+      "source": "stantcheva_stefanie",
+      "target": "income_taxation",
+      "type": "researches"
+    },
+    {
+      "source": "stantcheva_stefanie",
+      "target": "bias_measurement",
+      "type": "researches"
+    },
+    {
+      "source": "stantcheva_stefanie",
+      "target": "stantcheva_2021",
+      "type": "authored"
+    },
+    {
+      "source": "benartzi_shlomo",
+      "target": "retirement_defaults",
+      "type": "researches"
+    },
+    {
+      "source": "benartzi_shlomo",
+      "target": "savings_behavior",
+      "type": "researches"
+    },
+    {
+      "source": "benartzi_shlomo",
+      "target": "present_bias",
+      "type": "researches"
+    },
+    {
+      "source": "benartzi_shlomo",
+      "target": "thaler_benartzi_2004",
+      "type": "authored"
+    },
+    {
+      "source": "linos_elizabeth",
+      "target": "rct_field",
+      "type": "researches"
+    },
+    {
+      "source": "linos_elizabeth",
+      "target": "nudges_defaults",
+      "type": "researches"
+    },
+    {
+      "source": "linos_elizabeth",
+      "target": "admin_burden",
+      "type": "researches"
+    },
+    {
+      "source": "linos_elizabeth",
+      "target": "dellavigna_linos_2022",
+      "type": "authored"
+    },
+    {
+      "source": "kessler_judd",
+      "target": "energy_nudges",
+      "type": "researches"
+    },
+    {
+      "source": "kessler_judd",
+      "target": "nudges_defaults",
+      "type": "researches"
+    },
+    {
+      "source": "kessler_judd",
+      "target": "welfare_analysis",
+      "type": "researches"
+    },
+    {
+      "source": "kessler_judd",
+      "target": "allcott_kessler_2019",
+      "type": "authored"
+    },
+    {
+      "source": "goldin_jacob",
+      "target": "welfare_analysis",
+      "type": "researches"
+    },
+    {
+      "source": "goldin_jacob",
+      "target": "bpf_framework",
+      "type": "researches"
+    },
+    {
+      "source": "goldin_jacob",
+      "target": "salience_effects",
+      "type": "researches"
+    },
+    {
+      "source": "goldin_jacob",
+      "target": "goldin_reck_2020",
+      "type": "authored"
+    },
+    {
+      "source": "reck_daniel",
+      "target": "welfare_analysis",
+      "type": "researches"
+    },
+    {
+      "source": "reck_daniel",
+      "target": "bpf_framework",
+      "type": "researches"
+    },
+    {
+      "source": "reck_daniel",
+      "target": "salience_effects",
+      "type": "researches"
+    },
+    {
+      "source": "reck_daniel",
+      "target": "goldin_reck_2020",
+      "type": "authored"
+    },
+    {
+      "source": "handel_benjamin",
+      "target": "health_insurance_choice",
+      "type": "researches"
+    },
+    {
+      "source": "handel_benjamin",
+      "target": "welfare_analysis",
+      "type": "researches"
+    },
+    {
+      "source": "handel_benjamin",
+      "target": "handel_2013",
+      "type": "authored"
+    },
+    {
+      "source": "handel_benjamin",
+      "target": "handel_kolstad_2015",
+      "type": "authored"
+    },
+    {
+      "source": "handel_benjamin",
+      "target": "handel_kolstad_minten_spinnewijn_2021",
+      "type": "authored"
+    },
+    {
+      "source": "kolstad_jonathan",
+      "target": "health_insurance_choice",
+      "type": "researches"
+    },
+    {
+      "source": "kolstad_jonathan",
+      "target": "bias_measurement",
+      "type": "researches"
+    },
+    {
+      "source": "kolstad_jonathan",
+      "target": "welfare_analysis",
+      "type": "researches"
+    },
+    {
+      "source": "kolstad_jonathan",
+      "target": "handel_kolstad_2015",
+      "type": "authored"
+    },
+    {
+      "source": "kolstad_jonathan",
+      "target": "handel_kolstad_minten_spinnewijn_2021",
+      "type": "authored"
+    },
+    {
+      "source": "hendren_nathaniel",
+      "target": "pigouvian_insurance",
+      "type": "researches"
+    },
+    {
+      "source": "hendren_nathaniel",
+      "target": "neighborhood_effects",
+      "type": "researches"
+    },
+    {
+      "source": "hendren_nathaniel",
+      "target": "unemployment_insurance",
+      "type": "researches"
+    },
+    {
+      "source": "hendren_nathaniel",
+      "target": "hendren_landais_spinnewijn_2021",
+      "type": "authored"
+    },
+    {
+      "source": "hendren_nathaniel",
+      "target": "bergman_chetty_etal_2020",
+      "type": "authored"
+    },
+    {
+      "source": "landais_camille",
+      "target": "pigouvian_insurance",
+      "type": "researches"
+    },
+    {
+      "source": "landais_camille",
+      "target": "unemployment_insurance",
+      "type": "researches"
+    },
+    {
+      "source": "landais_camille",
+      "target": "hendren_landais_spinnewijn_2021",
+      "type": "authored"
+    },
+    {
+      "source": "abaluck_jason",
+      "target": "health_insurance_choice",
+      "type": "researches"
+    },
+    {
+      "source": "abaluck_jason",
+      "target": "bias_measurement",
+      "type": "researches"
+    },
+    {
+      "source": "abaluck_jason",
+      "target": "abaluck_gruber_2011",
+      "type": "authored"
+    },
+    {
+      "source": "sydnor_justin",
+      "target": "health_insurance_choice",
+      "type": "researches"
+    },
+    {
+      "source": "sydnor_justin",
+      "target": "bias_measurement",
+      "type": "researches"
+    },
+    {
+      "source": "sydnor_justin",
+      "target": "bhargava_loewenstein_sydnor_2017",
+      "type": "authored"
+    },
+    {
+      "source": "loewenstein_george",
+      "target": "health_insurance_choice",
+      "type": "researches"
+    },
+    {
+      "source": "loewenstein_george",
+      "target": "present_bias",
+      "type": "researches"
+    },
+    {
+      "source": "loewenstein_george",
+      "target": "welfare_analysis",
+      "type": "researches"
+    },
+    {
+      "source": "loewenstein_george",
+      "target": "bhargava_loewenstein_sydnor_2017",
+      "type": "authored"
+    },
+    {
+      "source": "agarwal_sumit",
+      "target": "consumer_credit",
+      "type": "researches"
+    },
+    {
+      "source": "agarwal_sumit",
+      "target": "corrective_policy",
+      "type": "researches"
+    },
+    {
+      "source": "agarwal_sumit",
+      "target": "agarwal_etal_2015",
+      "type": "authored"
+    },
+    {
+      "source": "zinman_jonathan",
+      "target": "payday_lending",
+      "type": "researches"
+    },
+    {
+      "source": "zinman_jonathan",
+      "target": "consumer_credit",
+      "type": "researches"
+    },
+    {
+      "source": "zinman_jonathan",
+      "target": "corrective_policy",
+      "type": "researches"
+    },
+    {
+      "source": "zinman_jonathan",
+      "target": "allcott_kim_taubinsky_zinman_2022",
+      "type": "authored"
+    },
+    {
+      "source": "grubb_michael",
+      "target": "overconfidence_markets",
+      "type": "researches"
+    },
+    {
+      "source": "grubb_michael",
+      "target": "shrouded_prices",
+      "type": "researches"
+    },
+    {
+      "source": "grubb_michael",
+      "target": "behavioral_io",
+      "type": "researches"
+    },
+    {
+      "source": "grubb_michael",
+      "target": "grubb_2015_jep",
+      "type": "authored"
+    },
+    {
+      "source": "bergman_peter",
+      "target": "neighborhood_effects",
+      "type": "researches"
+    },
+    {
+      "source": "bergman_peter",
+      "target": "program_takeup",
+      "type": "researches"
+    },
+    {
+      "source": "bergman_peter",
+      "target": "bergman_chetty_etal_2020",
+      "type": "authored"
+    },
+    {
+      "source": "choi_james",
+      "target": "retirement_defaults",
+      "type": "researches"
+    },
+    {
+      "source": "choi_james",
+      "target": "savings_behavior",
+      "type": "researches"
+    },
+    {
+      "source": "choi_james",
+      "target": "liquidity_present_bias",
+      "type": "researches"
+    },
+    {
+      "source": "choi_james",
+      "target": "beshears_etal_2018",
+      "type": "authored"
+    },
+    {
+      "source": "choi_james",
+      "target": "chetty_friedman_etal_2014",
       "type": "authored"
     }
   ]
