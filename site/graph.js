@@ -86,17 +86,21 @@ function render(data) {
   const nodes = data.nodes.map(d => ({ ...d }));
   const links = data.links.map(d => ({ ...d }));
 
-  // Arrow marker
+  // Arrowhead for the topic → subtopic backbone. refX stays 0 because each
+  // line is trimmed to its target's edge on tick — node radii differ by type,
+  // so a single fixed refX would sit inside big nodes and off small ones.
   g.append("defs").append("marker")
     .attr("id", "arrow")
     .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 22)
-    .attr("markerWidth", 4)
-    .attr("markerHeight", 4)
+    .attr("refX", 0)
+    .attr("refY", 0)
+    .attr("markerWidth", 5)
+    .attr("markerHeight", 5)
     .attr("orient", "auto")
     .append("path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .attr("fill", "#3a3d50");
+    .attr("d", "M0,-4L8,0L0,4")
+    .attr("fill", LINK_CONFIG.has_subtopic.color)
+    .attr("fill-opacity", 0.7);
 
   // Force simulation
   simulation = d3.forceSimulation(nodes)
@@ -130,7 +134,8 @@ function render(data) {
     .join("line")
     .attr("stroke",         d => LINK_CONFIG[d.type]?.color   || "#444")
     .attr("stroke-opacity", d => LINK_CONFIG[d.type]?.opacity || 0.2)
-    .attr("stroke-width",   d => LINK_CONFIG[d.type]?.width   || 1);
+    .attr("stroke-width",   d => LINK_CONFIG[d.type]?.width   || 1)
+    .attr("marker-end",     d => d.type === "has_subtopic" ? "url(#arrow)" : null);
 
   // ── Nodes ──────────────────────────────────────────────────────────────
   const node = g.append("g").attr("class", "nodes")
@@ -179,11 +184,19 @@ function render(data) {
 
   // Tick
   simulation.on("tick", () => {
-    link
-      .attr("x1", d => d.source.x)
-      .attr("y1", d => d.source.y)
-      .attr("x2", d => d.target.x)
-      .attr("y2", d => d.target.y);
+    // Stop each line at the rim of its target circle instead of the centre, so
+    // the arrowhead lands where the node begins and lines stop showing through
+    // the semi-transparent circles.
+    link.each(function (d) {
+      const r   = (TYPE_CONFIG[d.target.type]?.radius || 10) + 2;
+      const dx  = d.target.x - d.source.x;
+      const dy  = d.target.y - d.source.y;
+      const len = Math.hypot(dx, dy) || 1;
+      this.setAttribute("x1", d.source.x);
+      this.setAttribute("y1", d.source.y);
+      this.setAttribute("x2", d.target.x - (dx / len) * r);
+      this.setAttribute("y2", d.target.y - (dy / len) * r);
+    });
     node.attr("transform", d => `translate(${d.x},${d.y})`);
   });
 
@@ -241,7 +254,8 @@ function selectNode(d, nodes, links, nodeEl, linkEl) {
     .attr("fill-opacity", n =>
       n.id === d.id ? 1 : connectedIds.has(n.id) ? 0.75 : 0.18)
     .attr("stroke-opacity", n =>
-      n.id === d.id ? 0.8 : connectedIds.has(n.id) ? 0.3 : 0.1);
+      n.id === d.id ? 0.8 : connectedIds.has(n.id) ? 0.3 : 0.1)
+    .attr("filter", n => n.id === d.id ? "url(#glow)" : null);
 
   linkEl.attr("stroke-opacity", l =>
     l.source.id === d.id || l.target.id === d.id
@@ -255,7 +269,8 @@ function resetHighlight(nodeEl, linkEl) {
   if (!nodeEl) return;
   nodeEl.selectAll("circle")
     .attr("fill-opacity", 0.88)
-    .attr("stroke-opacity", 0.2);
+    .attr("stroke-opacity", 0.2)
+    .attr("filter", null);
   linkEl.attr("stroke-opacity", l => LINK_CONFIG[l.type]?.opacity || 0.2);
 }
 
