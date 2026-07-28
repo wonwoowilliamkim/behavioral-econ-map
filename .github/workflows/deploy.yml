@@ -42,7 +42,9 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          # Publish only the rendered site. The ontology YAML, the vault, the
+          # scripts and the source PDF stay in the repo but off the web host.
+          path: "site"
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -72,31 +72,29 @@ behavioral-econ-map/
 │       └── researchers.yaml   # 74 researchers, key papers, affiliations
 │
 ├── scripts/
-│   ├── build_graph.py         # YAML → graph.json, written to root and site/
+│   ├── build_graph.py         # YAML → site/graph.json (the web graph)
 │   └── build_vault.py         # YAML → vault/ (Obsidian notes)
+│
+├── site/                      # ← the only folder published to the web
+│   ├── index.html             # Layout, header, filter bar, detail panel
+│   ├── style.css              # Dark-mode design system
+│   ├── graph.js               # D3 v7 force-directed graph, tooltips, highlight
+│   ├── search.js              # Client-side scored search with keyboard nav
+│   └── graph.json             # Auto-generated — do not edit directly
 │
 ├── vault/                     # Obsidian vault — open THIS folder, not the repo
 │   ├── .obsidian/             # Graph colors, plugins (tracked; workspace.json is not)
 │   ├── Papers/ Topics/ Researchers/
 │   └── Behavioral Public Economics.md
 │
-├── index.html                 # ┐ Served page — GitHub Pages publishes the repo
-├── style.css                  # │ root, so these five files must live here.
-├── graph.js                   # │ D3 v7 force-directed graph, tooltips, highlight
-├── search.js                  # │ Client-side scored search with keyboard nav
-├── graph.json                 # ┘ Auto-generated — do not edit directly
-│
-├── site/                      # Byte-identical copy for `python -m http.server`
-│
 ├── .github/workflows/
-│   └── deploy.yml             # Push to main → rebuild graph.json → Pages
+│   └── deploy.yml             # Push to main → rebuild graph.json → publish site/
 │
 └── w24828.pdf                 # Source: Bernheim & Taubinsky (2018) NBER WP
 ```
 
-> **Why the duplication?** The workflow uploads the repo root (`path: "."`), so the
-> page assets have to sit at the top level. `site/` is kept as a self-contained
-> folder to serve locally without exposing the YAML and PDF.
+The ontology, the scripts, the vault and the source PDF stay in the repository
+but are not uploaded to the web host — the workflow publishes `site/` only.
 
 ---
 
@@ -113,8 +111,7 @@ pip install pyyaml
 ```bash
 python scripts/build_graph.py
 # → Built graph: 189 nodes, 547 links
-#   → graph.json        (repo root — this is what GitHub Pages serves)
-#   → site/graph.json   (local dev copy)
+#   → site/graph.json
 ```
 
 ### 3. Serve the site
@@ -136,14 +133,14 @@ Any push to `main` re-runs `build_graph.py` in CI and republishes — so committ
 edited YAML is enough; a stale `graph.json` in the commit gets overwritten.
 
 ```bash
-git add data/ontology/ graph.json site/graph.json
+git add data/ontology/ site/graph.json
 git commit -m "Add papers to ontology"
 git push origin main          # → Actions rebuilds and deploys
 ```
 
 One-time setup: **Settings → Pages → Source: GitHub Actions** (not "Deploy from a
-branch"). There is no `gh-pages` branch — the workflow uploads the repo root
-directly.
+branch"). There is no `gh-pages` branch and no `docs/` folder — the workflow
+uploads `site/` as the artifact.
 
 ---
 

@@ -1,8 +1,7 @@
 """
 Converts YAML ontology files → graph.json for D3.js visualization.
 Run: python scripts/build_graph.py
-Output: graph.json (repo root, served by GitHub Pages)
-        site/graph.json (local dev copy)
+Output: site/graph.json — site/ is the folder GitHub Pages publishes
 """
 
 import json
@@ -11,8 +10,7 @@ import os
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ONTOLOGY = os.path.join(ROOT, "data", "ontology")
-OUT = os.path.join(ROOT, "graph.json")          # root — served by GitHub Pages
-OUT_SITE = os.path.join(ROOT, "site", "graph.json")  # site/ dev copy
+OUT = os.path.join(ROOT, "site", "graph.json")
 
 
 def load(filename):
@@ -81,18 +79,12 @@ def build():
     graph = {"nodes": nodes, "links": links}
     payload = json.dumps(graph, indent=2, ensure_ascii=False)
 
-    # Write to root (GitHub Pages serves from here)
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
-        f.write(payload)
-
-    # Also write to site/ for local dev
-    os.makedirs(os.path.dirname(OUT_SITE), exist_ok=True)
-    with open(OUT_SITE, "w", encoding="utf-8") as f:
         f.write(payload)
 
     print(f"Built graph: {len(nodes)} nodes, {len(links)} links")
     print(f"  → {OUT}")
-    print(f"  → {OUT_SITE}")
 
 
 if __name__ == "__main__":
