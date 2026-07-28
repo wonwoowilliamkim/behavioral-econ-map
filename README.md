@@ -1,6 +1,6 @@
 # Behavioral Public Economics — Interactive Research Map
 
-> An Obsidian-style, browser-based knowledge graph of the **behavioral public economics** literature — built from papers cited in Bernheim & Taubinsky (2018), the authoritative handbook chapter on the field.
+> An Obsidian-style, browser-based knowledge graph of the **behavioral public economics** literature — anchored on Bernheim & Taubinsky (2018), the authoritative handbook chapter on the field, and extended with the NBER Behavioral Public Economics Boot Camp reading list.
 
 **Live demo:** [GitHub Pages](https://wonwoowilliamkim.github.io/behavioral-econ-map/) _(deploy instructions below)_
 
@@ -10,24 +10,31 @@
 
 This project turns an academic literature into an **interactive, explorable network**. Every paper, researcher, and topic in the graph is a clickable node. Click a paper → see its summary, journal, handbook section, and every connected author and topic. Click a researcher → see all their papers at once. Filter by node type. Search across the entire corpus with `⌘K`.
 
-The ontology is grounded in **Bernheim & Taubinsky (2018) "Behavioral Public Economics"** (NBER WP 24828, _Handbook of Behavioral Economics_ Vol. 1) — the most comprehensive survey of the field to date. Only papers directly cited in that handbook chapter are included.
+The ontology is grounded in **Bernheim & Taubinsky (2018) "Behavioral Public Economics"** (NBER WP 24828, _Handbook of Behavioral Economics_ Vol. 1) — the most comprehensive survey of the field to date. The handbook chapter supplies the backbone: seven topic clusters keyed to its section numbers. Four further clusters — insurance, household finance, behavioral IO, and inequality — come from the **NBER Behavioral Public Economics Boot Camp** reading list, and are marked as `module` rather than `§` in their `handbook_section` field.
 
 ---
 
 ## Field Coverage
 
-The map covers **six thematic clusters** mirroring the handbook's structure:
+The map covers **eleven topic clusters** — seven keyed to the handbook's section numbers, four drawn from the boot camp modules:
 
-| Handbook Section | Topic Cluster | Key Papers |
-|---|---|---|
-| §2 | **Behavioral Welfare Economics** | Bernheim-Rangel (2009), Chetty (2015) |
-| §3.2 | **Corrective Taxation** | Allcott-Taubinsky (2015), Gruber-Kőszegi (2001) |
-| §3.3 | **Distributional Concerns** | Allcott-Lockwood-Taubinsky (2018) |
-| §3.4 | **Tax Salience** | Chetty-Looney-Kroft (2009), Finkelstein (2009) |
-| §3.5 | **Nudges & Defaults** | Thaler-Sunstein (2003), Madrian-Shea (2001) |
-| §4–5 | **Saving & Earnings** | Laibson (1997), Bhargava-Manoli (2015) |
+| Source | Topic Cluster | Subtopics | Papers | Example |
+|---|---|---|---|---|
+| §2 | **Behavioral Welfare Economics** | 3 | 17 | Bernheim-Rangel (2009 QJE) |
+| §3 | **Corrective Taxation & Policy** | 4 | 21 | Gruber-Kőszegi (2001 QJE) |
+| §3.5 | **Nudges & Default Effects** | 3 | 15 | Madrian-Shea (2001 QJE) |
+| §4–§5 | **Sludge & Administrative Burden** | 2 | 3 | Bhargava-Manoli (2015 AER) |
+| §4 | **Present Bias & Self-Control** | 3 | 16 | Laibson (1997 QJE) |
+| §5 | **Earnings & Labor Policy** | 2 | 11 | Chetty (2008 JPE) |
+| cross-cutting | **Empirical Methods** | 3 | 31 | Chetty-Looney-Kroft (2009 AER) |
+| Boot camp module | **Behavioral & Social Insurance** | 4 | 22 | Abaluck-Gruber (2011 AER) |
+| Boot camp module | **Household Finance & Consumer Credit** | 3 | 6 | Gathergood-Mahoney (2019 AER) |
+| Boot camp module | **Behavioral Industrial Organization** | 2 | 2 | Grubb (2015 JEP) |
+| Boot camp module | **Inequality, Mobility & Opportunity** | 2 | 3 | Stantcheva (2021 QJE) |
 
-**26 papers · 28 researchers · 7 topic clusters · 22 subtopics · 236+ connections**
+**73 papers · 74 researchers · 11 topic clusters · 31 subtopics · 189 nodes · 547 connections**
+
+> Paper counts per cluster include papers attached via that cluster's subtopics, and a paper can belong to several clusters — so the column sums to more than 73. The live site's stats bar is generated from `graph.json` and is always authoritative.
 
 ---
 
@@ -60,22 +67,30 @@ behavioral-econ-map/
 │
 ├── data/
 │   └── ontology/
-│       ├── topics.yaml        # 7 topic clusters, 22 subtopics with handbook sections
-│       ├── papers.yaml        # 26 papers from Bernheim-Taubinsky (2018) w24828
-│       └── researchers.yaml   # 28 researchers, key papers, affiliations
+│       ├── topics.yaml        # 11 topic clusters, 31 subtopics with handbook sections
+│       ├── papers.yaml        # 73 papers — w24828 bibliography + boot camp reading list
+│       └── researchers.yaml   # 74 researchers, key papers, affiliations
 │
 ├── scripts/
-│   └── build_graph.py         # YAML → site/graph.json (D3 input)
+│   └── build_graph.py         # YAML → graph.json, written to root and site/
 │
-├── site/                      # Static site — deploy to GitHub Pages
-│   ├── index.html             # Layout, header, filter bar, detail panel
-│   ├── style.css              # Dark-mode design system
-│   ├── graph.js               # D3 v7 force-directed graph, tooltips, highlight
-│   ├── search.js              # Client-side fuzzy search with keyboard nav
-│   └── graph.json             # Auto-generated — do not edit directly
+├── index.html                 # ┐ Served page — GitHub Pages publishes the repo
+├── style.css                  # │ root, so these five files must live here.
+├── graph.js                   # │ D3 v7 force-directed graph, tooltips, highlight
+├── search.js                  # │ Client-side scored search with keyboard nav
+├── graph.json                 # ┘ Auto-generated — do not edit directly
+│
+├── site/                      # Byte-identical copy for `python -m http.server`
+│
+├── .github/workflows/
+│   └── deploy.yml             # Push to main → rebuild graph.json → Pages
 │
 └── w24828.pdf                 # Source: Bernheim & Taubinsky (2018) NBER WP
 ```
+
+> **Why the duplication?** The workflow uploads the repo root (`path: "."`), so the
+> page assets have to sit at the top level. `site/` is kept as a self-contained
+> folder to serve locally without exposing the YAML and PDF.
 
 ---
 
@@ -91,7 +106,9 @@ pip install pyyaml
 
 ```bash
 python scripts/build_graph.py
-# → Built graph: 84 nodes, 236 links → site/graph.json
+# → Built graph: 189 nodes, 547 links
+#   → graph.json        (repo root — this is what GitHub Pages serves)
+#   → site/graph.json   (local dev copy)
 ```
 
 ### 3. Serve the site
@@ -108,15 +125,19 @@ python -m http.server 8080 --directory site
 
 ## GitHub Pages Deployment
 
-```bash
-# From repo root
-git checkout -b gh-pages   # or use your existing main branch
-git add site/
-git commit -m "deploy site"
-git push origin gh-pages
+Deployment is automated by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+Any push to `main` re-runs `build_graph.py` in CI and republishes — so committing
+edited YAML is enough; a stale `graph.json` in the commit gets overwritten.
 
-# In GitHub repo → Settings → Pages → Source: gh-pages branch / /site folder
+```bash
+git add data/ontology/ graph.json site/graph.json
+git commit -m "Add papers to ontology"
+git push origin main          # → Actions rebuilds and deploys
 ```
+
+One-time setup: **Settings → Pages → Source: GitHub Actions** (not "Deploy from a
+branch"). There is no `gh-pages` branch — the workflow uploads the repo root
+directly.
 
 ---
 
@@ -140,7 +161,11 @@ All papers are from the bibliography of:
 
 > Bernheim, B. D., & Taubinsky, D. (2018). **Behavioral Public Economics**. In B. D. Bernheim, S. DellaVigna, & D. Laibson (Eds.), _Handbook of Behavioral Economics: Applications and Foundations_, Vol. 1 (pp. 381–516). Elsevier. [NBER WP 24828](https://www.nber.org/papers/w24828)
 
-Journals covered: _AER, QJE, JPE, REStud, Econometrica, JPubE, JEEA, REStat, AEA P&P_.
+Papers added from the boot camp reading list extend beyond that bibliography.
+Outlets covered are led by _AER_ and _QJE_ (roughly half the corpus between them),
+followed by _Econometrica, JPE, JPubE, REStud, AEJ: Applied, AEJ: Economic Policy,
+JEEA_, plus review outlets (_JEL, JEP, Annual Review of Economics_), NBER working
+papers, and _Handbook of Behavioral Economics_ chapters.
 
 ---
 

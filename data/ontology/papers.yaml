@@ -736,3 +736,318 @@ papers:
       preferences. Distinguishes between "type" variation (risk aversion, risk level)
       and "mistake" variation (biased beliefs about risk). Shows that corrective
       insurance subsidies can be welfare-improving when biased beliefs drive selection.
+
+  # ── Insurance: additional NBER Boot Camp papers ───────────────────────────
+
+  - id: brot_goldberg_etal_2017
+    title: "What Does a Deductible Do? The Impact of Cost-Sharing on Health Care Prices, Quantities, and Spending Dynamics"
+    authors: [Brot-Goldberg, Chandra, Handel, Kolstad]
+    year: 2017
+    journal: QJE
+    section: "Insurance"
+    topics: [health_insurance_choice, adverse_selection_inertia]
+    url: https://doi.org/10.1093/qje/qjx013
+    summary: >
+      Studies a large employer-mandated shift to high-deductible health plans using
+      administrative claims. Finds consumers reduce spending bluntly across all care
+      categories — including high-value preventive care — rather than targeting low-value
+      spending. Implies that HDHPs impose welfare costs by inducing consumers to forgo
+      valuable care, not just wasteful care.
+
+  - id: ganong_noel_2019
+    title: "Consumer Spending during Unemployment: Positive and Normative Implications"
+    authors: [Ganong, Noel]
+    year: 2019
+    journal: AER
+    section: "Insurance"
+    topics: [unemployment_insurance, social_insurance, sufficient_stats]
+    url: https://doi.org/10.1257/aer.20170537
+    summary: >
+      Uses bank account transaction data to document that consumer spending drops
+      sharply at UI benefit exhaustion — beyond what liquidity constraints alone predict.
+      The pattern is consistent with present bias or reference dependence around the
+      benefit level. Normative implication: optimal UI should taper benefits more
+      gradually to smooth consumption over the unemployment spell.
+
+  - id: gerard_naritomi_2021
+    title: "Job Displacement Insurance and (the Lack of) Consumption-Smoothing"
+    authors: [Gerard, Naritomi]
+    year: 2021
+    journal: AER
+    section: "Insurance"
+    topics: [unemployment_insurance, social_insurance]
+    url: https://doi.org/10.1257/aer.20190388
+    summary: >
+      Uses Brazilian administrative data to show that displaced workers experience
+      large consumption drops despite generous severance pay and UI benefits. Workers
+      spend most severance immediately rather than spreading it over the unemployment
+      spell. Provides evidence that liquidity constraints and present bias jointly
+      undermine consumption smoothing after job loss.
+
+  - id: marinescu_skandalis_2021
+    title: "Unemployment Insurance and Job Search Behavior"
+    authors: [Marinescu, Skandalis]
+    year: 2021
+    journal: QJE
+    section: "Insurance"
+    topics: [unemployment_insurance, social_insurance]
+    url: https://doi.org/10.1093/qje/qjab016
+    summary: >
+      Uses French job-board data linked to UI records to study how UI generosity affects
+      search effort and match quality. Finds that UI reduces search intensity but
+      increases the quality of job applications and accepted offers. Overall welfare
+      effect is positive: the option value of better matching outweighs the moral hazard
+      cost of reduced search effort.
+
+  - id: mueller_spinnewijn_topa_2021
+    title: "Job Seekers' Perceptions and Employment Prospects: Heterogeneity, Duration Dependence, and Bias"
+    authors: [Mueller, Spinnewijn, Topa]
+    year: 2021
+    journal: AER
+    section: "Insurance"
+    topics: [unemployment_insurance, bias_measurement]
+    url: https://doi.org/10.1257/aer.20190896
+    summary: >
+      Measures job seekers' subjective beliefs about reemployment using survey data and
+      compares them to realized outcomes. Documents systematic overoptimism, especially
+      among long-term unemployed. Beliefs update negatively with duration in ways
+      inconsistent with Bayesian updating. Implications: correcting biased beliefs could
+      improve search efficiency; optimal UI must account for heterogeneous and biased agents.
+
+  - id: abaluck_gruber_2016
+    title: "Evolving Choice Inconsistencies in Choice of Prescription Drug Insurance"
+    authors: [Abaluck, Gruber]
+    year: 2016
+    journal: AER
+    section: "Insurance"
+    topics: [health_insurance_choice, bias_measurement, adverse_selection_inertia]
+    url: https://doi.org/10.1257/aer.20130778
+    summary: >
+      Extends the 2011 Medicare Part D analysis to examine how choice quality evolves
+      as enrollees gain experience. Finds that choice inconsistencies persist and
+      inertia is the dominant driver of suboptimal plan selection over time.
+      Policies mandating active re-enrollment significantly improve welfare by forcing
+      annual reconsideration.
+
+  - id: barseghyan_etal_2013
+    title: "The Nature of Risk Preferences: Evidence from Insurance Choices"
+    authors: [Barseghyan, Molinari, O'Donoghue, Teitelbaum]
+    year: 2013
+    journal: AER
+    section: "Insurance"
+    topics: [health_insurance_choice, bias_measurement]
+    url: https://doi.org/10.1257/aer.103.6.2499
+    summary: >
+      Estimates structural risk preferences from household deductible choices across
+      home and auto insurance lines. Finds that probability distortions — overweighting
+      small loss probabilities, as in prospect theory — are more important than
+      diminishing marginal utility in explaining observed choices. Heterogeneity in
+      probability weighting is substantial and policy-relevant.
+
+  - id: fang_keane_silverman_2008
+    title: "Sources of Advantageous Selection: Evidence from the Medigap Insurance Market"
+    authors: [Fang, Keane, Silverman]
+    year: 2008
+    journal: JPE
+    section: "Insurance"
+    topics: [health_insurance_choice, adverse_selection_inertia]
+    url: https://doi.org/10.1086/597192
+    summary: >
+      Documents advantageous selection in Medigap: healthier individuals buy more
+      supplemental insurance, opposite to adverse selection predictions. Cognitive
+      ability is the key omitted variable — high-ability individuals are both healthier
+      and more likely to purchase supplemental coverage. Shows that multi-dimensional
+      heterogeneity can reverse the direction of selection in insurance markets.
+
+  - id: hendren_2013
+    title: "Private Information and Insurance Rejections"
+    authors: [Hendren]
+    year: 2013
+    journal: Econometrica
+    section: "Insurance"
+    topics: [pigouvian_insurance, adverse_selection_inertia]
+    url: https://doi.org/10.3982/ECTA10489
+    summary: >
+      Shows that private information about health risk causes large-scale insurance
+      market unraveling: applicants who are rejected for coverage are precisely those
+      with the most private knowledge of their high risk. Develops an empirical test
+      for private information using rejection rates and subsequent mortality.
+      Quantifies the welfare cost of private information through market exclusion.
+
+  - id: hendren_2017
+    title: "Knowledge of Future Job Loss and Implications for Unemployment Insurance"
+    authors: [Hendren]
+    year: 2017
+    journal: AER
+    section: "Insurance"
+    topics: [unemployment_insurance, pigouvian_insurance]
+    url: https://doi.org/10.1257/aer.20151655
+    summary: >
+      Estimates the degree to which workers have private information about their
+      future job loss risk using expenditure and income data. Finds substantial private
+      information that generates adverse selection in UI. Derives upper and lower bounds
+      on the optimal UI replacement rate accounting for this selection, showing that
+      optimal UI may be significantly lower than Baily-Chetty when private information
+      is severe.
+
+  - id: landais_michaillat_saez_2018
+    title: "A Macroeconomic Approach to Optimal Unemployment Insurance: Theory"
+    authors: [Landais, Michaillat, Saez]
+    year: 2018
+    journal: AER
+    section: "Insurance"
+    topics: [unemployment_insurance, social_insurance, sufficient_stats]
+    url: https://doi.org/10.1257/aer.20150233
+    summary: >
+      Extends the Baily-Chetty optimal UI formula to a macroeconomic model with
+      matching frictions. Adds a job-creation externality: UI raises workers' outside
+      options, stimulating job creation by firms. In slack labor markets, the optimal
+      replacement rate exceeds the partial-equilibrium optimum. Provides a new
+      sufficient statistic for optimal UI that depends on the labor market tightness.
+
+  - id: landais_spinnewijn_2021
+    title: "The Value of Unemployment Insurance"
+    authors: [Landais, Spinnewijn]
+    year: 2021
+    journal: REStud
+    section: "Insurance"
+    topics: [unemployment_insurance, social_insurance, bias_measurement]
+    url: https://doi.org/10.1093/restud/rdaa038
+    summary: >
+      Develops a revealed preference approach to measure the welfare value of UI
+      using consumption and asset data. Constructs a sufficient statistic for the
+      marginal value of UI that accounts for heterogeneity in liquidity constraints
+      and risk preferences across workers. Finds the welfare value of UI substantially
+      exceeds its fiscal cost for most worker types, justifying current generosity.
+
+  - id: sydnor_2010
+    title: "(Over)insuring Modest Risks"
+    authors: [Sydnor]
+    year: 2010
+    journal: "AEJ: Applied Economics"
+    section: "Insurance"
+    topics: [health_insurance_choice, bias_measurement]
+    url: https://doi.org/10.1257/app.2.4.177
+    summary: >
+      Documents that homeowners systematically choose low deductibles for home insurance
+      despite actuarially unfavorable premium-deductible trade-offs. The implied risk
+      aversion required to rationalize choices is implausibly high (coefficients of
+      relative risk aversion > 100). More plausible explanations include loss aversion
+      and probability overweighting of modest, predictable losses.
+
+  # ── Tax Misperceptions: additional Boot Camp papers ───────────────────────
+
+  - id: ito_2014
+    title: "Do Consumers Respond to Marginal or Average Price? Evidence from Nonlinear Electricity Pricing"
+    authors: [Ito]
+    year: 2014
+    journal: AER
+    section: "Tax Misperceptions"
+    topics: [salience_effects, tax_salience, bias_measurement]
+    url: https://doi.org/10.1257/aer.104.2.537
+    summary: >
+      Exploits discontinuities in tiered electricity pricing to test whether consumers
+      respond to marginal or average price. Finds strong evidence of average-price
+      responses: consumers appear to pay their average rate, not the marginal rate they
+      face on the next unit. This systematic misperception of nonlinear pricing implies
+      large welfare losses and has direct implications for the design of environmental
+      taxes and utility rate structures.
+
+  - id: goldin_homonoff_2013
+    title: "Smoke Gets in Your Eyes: Cigarette Tax Salience and Regressivity"
+    authors: [Goldin, Homonoff]
+    year: 2013
+    journal: "AEJ: Economic Policy"
+    section: "Tax Misperceptions"
+    topics: [salience_effects, sin_taxes, distributional_concerns]
+    url: https://doi.org/10.1257/pol.5.1.302
+    summary: >
+      Studies differential salience of cigarette excise taxes (included in shelf price)
+      vs. sales taxes (added at register) across income groups. Low-income smokers are
+      more responsive to the salient excise tax than the non-salient sales tax; high-income
+      smokers respond similarly to both. Tax salience varies by socioeconomic status,
+      affecting both the behavioral response and the distributional incidence of cigarette taxes.
+
+  # ── Household Finance: additional Boot Camp papers ────────────────────────
+
+  - id: laibson_maxted_moll_2021
+    title: "A Simple Mapping from MPCs to MPXs"
+    authors: [Laibson, Maxted, Moll]
+    year: 2021
+    journal: "NBER Working Paper 29323"
+    section: "Household Finance"
+    topics: [liquidity_present_bias, savings_behavior, present_bias]
+    url: https://www.nber.org/papers/w29323
+    summary: >
+      Derives analytical mappings from marginal propensities to consume out of income
+      (MPCs) to marginal propensities to spend out of illiquid wealth (MPXs) in a
+      model with present bias and illiquid retirement assets. Shows that present bias
+      amplifies the household balance-sheet channels of fiscal and monetary policy.
+      Provides micro-foundations for the high MPCs documented in household data.
+
+  - id: gathergood_etal_2019
+    title: "How Do Individuals Repay Their Debt? The Balance-Matching Heuristic"
+    authors: [Gathergood, Mahoney, Stewart, Weber]
+    year: 2019
+    journal: AER
+    section: "Household Finance"
+    topics: [consumer_credit, household_finance, bias_measurement]
+    url: https://doi.org/10.1257/aer.20180288
+    summary: >
+      Analyzes credit card repayment behavior for millions of UK accounts. Documents
+      that consumers use a balance-matching heuristic — splitting payments proportionally
+      to card balances rather than directing payments to the highest-interest card.
+      This simple rule is normatively sub-optimal (costing hundreds of dollars per year)
+      but highly robust across consumer types and credit market conditions.
+
+  - id: beshears_etal_2022
+    title: "Borrowing to Save? The Impact of Automatic Enrollment on Debt"
+    authors: [Beshears, Choi, Laibson, Madrian, Skimmyhorn]
+    year: 2022
+    journal: JF
+    section: "Household Finance"
+    topics: [liquidity_present_bias, retirement_defaults, savings_behavior]
+    url: https://doi.org/10.1111/jofi.13182
+    summary: >
+      Tests whether automatic 401(k) enrollment causes liquidity-constrained workers
+      to substitute retirement saving for consumer debt. Using military personnel data,
+      finds that auto-enrollment increases retirement savings without significant
+      increases in non-retirement debt. Workers do not simply borrow to offset forced
+      saving — the default raises net wealth, supporting the welfare case for nudge-based
+      retirement policy.
+
+  # ── Behavioral IO: additional Boot Camp papers ────────────────────────────
+
+  - id: heidhues_koszegi_2018
+    title: "Behavioral Industrial Organization"
+    authors: [Heidhues, Koszegi]
+    year: 2018
+    journal: "Handbook of Behavioral Economics"
+    section: "Behavioral IO"
+    topics: [behavioral_io, shrouded_prices, overconfidence_markets]
+    summary: >
+      Comprehensive handbook chapter reviewing how consumer biases shape firm strategy
+      and market equilibrium. Covers shrouded add-on pricing (firms hide true costs),
+      naivete about future usage (cell phones, credit cards), and switching costs with
+      present-biased consumers. Shows that market competition does not protect naive
+      consumers — firms can extract more surplus from biased consumers than from
+      rational ones. Reviews policy interventions including disclosure mandates and
+      fee regulation.
+
+  # ── Non-Standard Policy: additional Boot Camp papers ─────────────────────
+
+  - id: choukhmane_2021
+    title: "Default Options and Retirement Saving Dynamics"
+    authors: [Choukhmane]
+    year: 2021
+    journal: "Working Paper"
+    section: "Non-Standard Policy Instruments"
+    topics: [retirement_defaults, savings_behavior, nudges_defaults]
+    url: https://tahachoukhmane.com/wp-content/uploads/2021/09/Choukhmane_Defaults.pdf
+    summary: >
+      Studies how default contribution rates in Danish retirement plans shape saving
+      dynamics over the long run. Finds that defaults have large persistent effects
+      due to inertia, but workers do eventually adjust — the "bite" of the default
+      fades over time. Derives optimal dynamic defaults that front-load nudge strength
+      early in workers' careers, yielding substantial welfare gains relative to static
+      default policies.
