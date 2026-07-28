@@ -42,9 +42,10 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Publish only the rendered site. The ontology YAML, the vault, the
-          # scripts and the source PDF stay in the repo but off the web host.
-          path: "site"
+          # Must stay ".": Pages builds this repo from the branch with Jekyll,
+          # which races the Actions deploy. Serving the root means the map wins
+          # either way. See README "GitHub Pages Deployment".
+          path: "."
 
       - name: Deploy to GitHub Pages
         id: deployment

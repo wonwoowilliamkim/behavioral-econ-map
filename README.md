@@ -72,15 +72,16 @@ behavioral-econ-map/
 │       └── researchers.yaml   # 74 researchers, key papers, affiliations
 │
 ├── scripts/
-│   ├── build_graph.py         # YAML → site/graph.json (the web graph)
+│   ├── build_graph.py         # YAML → graph.json, written to root and site/
 │   └── build_vault.py         # YAML → vault/ (Obsidian notes)
 │
-├── site/                      # ← the only folder published to the web
-│   ├── index.html             # Layout, header, filter bar, detail panel
-│   ├── style.css              # Dark-mode design system
-│   ├── graph.js               # D3 v7 force-directed graph, tooltips, highlight
-│   ├── search.js              # Client-side scored search with keyboard nav
-│   └── graph.json             # Auto-generated — do not edit directly
+├── index.html                 # ┐ The served page. These five must stay at the
+├── style.css                  # │ repo root — see "GitHub Pages Deployment".
+├── graph.js                   # │ D3 v7 force-directed graph, tooltips, highlight
+├── search.js                  # │ Client-side scored search with keyboard nav
+├── graph.json                 # ┘ Auto-generated — do not edit directly
+│
+├── site/                      # Byte-identical copy for `python -m http.server`
 │
 ├── vault/                     # Obsidian vault — open THIS folder, not the repo
 │   ├── .obsidian/             # Graph colors, plugins (tracked; workspace.json is not)
@@ -88,13 +89,10 @@ behavioral-econ-map/
 │   └── Behavioral Public Economics.md
 │
 ├── .github/workflows/
-│   └── deploy.yml             # Push to main → rebuild graph.json → publish site/
+│   └── deploy.yml             # Push to main → rebuild graph.json → Pages
 │
 └── w24828.pdf                 # Source: Bernheim & Taubinsky (2018) NBER WP
 ```
-
-The ontology, the scripts, the vault and the source PDF stay in the repository
-but are not uploaded to the web host — the workflow publishes `site/` only.
 
 ---
 
@@ -128,19 +126,33 @@ python -m http.server 8080 --directory site
 
 ## GitHub Pages Deployment
 
-Deployment is automated by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
-Any push to `main` re-runs `build_graph.py` in CI and republishes — so committing
-edited YAML is enough; a stale `graph.json` in the commit gets overwritten.
-
 ```bash
-git add data/ontology/ site/graph.json
+git add data/ontology/ graph.json site/graph.json
 git commit -m "Add papers to ontology"
-git push origin main          # → Actions rebuilds and deploys
+git push origin main
 ```
 
-One-time setup: **Settings → Pages → Source: GitHub Actions** (not "Deploy from a
-branch"). There is no `gh-pages` branch and no `docs/` folder — the workflow
-uploads `site/` as the artifact.
+### Why the page assets are duplicated at the root
+
+Pages source for this repo is **Deploy from a branch** (`main`, root). Every push
+therefore triggers *two* builds: GitHub's own Jekyll build of the branch, and
+[`deploy.yml`](.github/workflows/deploy.yml). They race, and whichever finishes
+last is what visitors get.
+
+Keeping `index.html` and its four assets at the repo root makes the map the
+result of **either** build, so the race does not matter. `site/` is a
+byte-identical copy that exists so `python -m http.server --directory site`
+serves the page without also exposing the YAML and the PDF.
+
+Moving the assets into `site/` and pointing the workflow at `path: "site"` looks
+tidier and does work — for as long as the Actions run happens to win. When the
+Jekyll build wins instead, it finds no `index.html` at the root and renders
+`README.md` as the site index, so visitors get this file instead of the map.
+That is what commit `9f4f979` was fixing.
+
+To drop the duplication for real, first switch **Settings → Pages → Source** to
+**GitHub Actions**. That stops the Jekyll build, ends the race, and only then can
+`path: "site"` be relied on.
 
 ---
 
