@@ -1,0 +1,174 @@
+---
+type: index
+project: "Behavioral Public Economics"
+tags: [behavioral-public-economics, index]
+---
+
+# Behavioral Public Economics
+
+> Ontology-based research map. Click any node to explore connections.
+> Live D3 visualization: see the repo README for the GitHub Pages link.
+
+## Topics (11)
+- [[Behavioral Welfare Economics]] — Behavioral Welfare Economics
+- [[Corrective Taxation & Policy]] — Corrective Taxation & Policy
+- [[Nudges & Default Effects]] — Nudges & Default Effects
+- [[Sludge & Administrative Burden]] — Sludge & Administrative Burden
+- [[Present Bias & Self-Control]] — Present Bias & Self-Control
+- [[Earnings & Labor Policy]] — Earnings & Labor Policy
+- [[Empirical Methods]] — Empirical Methods
+- [[Behavioral Insurance & Social Insurance]] — Behavioral Insurance & Social Insurance
+- [[Household Finance & Consumer Credit]] — Household Finance & Consumer Credit
+- [[Behavioral Industrial Organization]] — Behavioral Industrial Organization
+- [[Inequality, Mobility & Opportunity]] — Inequality, Mobility & Opportunity
+
+## Papers (73)
+- [[Bernheim & Rangel 2009]] (QJE 2009)
+- [[Bernheim 2016]] (Journal of Benefit-Cost Analysis 2016)
+- [[Chetty 2015]] (AER 2015)
+- [[Laibson 1997]] (QJE 1997)
+- [[Gul & Pesendorfer 2001]] (Econometrica 2001)
+- [[Allcott & Taubinsky 2015]] (AER 2015)
+- [[Gruber & Koszegi 2001]] (QJE 2001)
+- [[Gruber & Koszegi 2004]] (JPubE 2004)
+- [[Allcott et al. 2018b]] (QJE (forthcoming) 2018)
+- [[O'Donoghue & Rabin 2006]] (JPubE 2006)
+- [[Allcott et al. 2014]] (JPubE 2014)
+- [[Farhi & Gabaix 2015]] (NBER Working Paper 21524 2015)
+- [[Bernheim & Rangel 2004]] (AER 2004)
+- [[Chetty et al. 2009]] (AER 2009)
+- [[Finkelstein 2009]] (QJE 2009)
+- [[Thaler & Sunstein 2003]] (AER 2003)
+- [[Allcott & Rogers 2014]] (AER 2014)
+- [[Madrian & Shea 2001]] (QJE 2001)
+- [[Carroll et al. 2009]] (QJE 2009)
+- [[Bernheim et al. 2015b]] (AER 2015)
+- [[Ashraf et al. 2006]] (QJE 2006)
+- [[Bernheim et al. 2015a]] (Econometrica 2015)
+- [[Bhargava & Manoli 2015]] (AER 2015)
+- [[Feldman et al. 2016]] (AER 2016)
+- [[Baicker et al. 2015]] (QJE 2015)
+- [[Spinnewijn 2015]] (JEEA 2015)
+- [[Bronnenberg et al. 2015]] (QJE 2015)
+- [[Ambuehl et al. 2017]] (NBER Working Paper 20618 2017)
+- [[Allcott et al. 2018a]] (AEA Papers and Proceedings 2018)
+- [[DellaVigna 2009]] (JEL 2009)
+- [[Taubinsky & Rees-Jones 2018]] (REStud 2018)
+- [[Stantcheva 2021]] (QJE 2021)
+- [[Thaler & Benartzi 2004]] (JPE 2004)
+- [[Chetty et al. 2014]] (QJE 2014)
+- [[DellaVigna & Linos 2022]] (Econometrica 2022)
+- [[Allcott & Kessler 2019]] (AEJ: Applied Economics 2019)
+- [[Goldin & Reck 2020]] (JPE 2020)
+- [[Butera et al. 2022]] (AER 2022)
+- [[Barahona et al. 2021]] (Econometrica 2021)
+- [[Hendren et al. 2021]] (Annual Review of Economics 2021)
+- [[Chetty 2008]] (JPE 2008)
+- [[DellaVigna et al. 2017]] (QJE 2017)
+- [[Handel 2013]] (AER 2013)
+- [[Handel & Kolstad 2015]] (AER 2015)
+- [[Abaluck & Gruber 2011]] (AER 2011)
+- [[Bhargava et al. 2017]] (QJE 2017)
+- [[Handel et al. 2021]] (NBER Working Paper 2021)
+- [[Bergman et al. 2020]] (NBER Working Paper 2020)
+- [[Beshears et al. 2018]] (Handbook of Behavioral Economics 2018)
+- [[Agarwal et al. 2015]] (QJE 2015)
+- [[Allcott et al. 2022]] (REStud 2022)
+- [[Grubb 2015]] (JEP 2015)
+- [[Spinnewijn 2017]] (AEJ: Economic Policy 2017)
+- [[Brot-Goldberg et al. 2017]] (QJE 2017)
+- [[Ganong & Noel 2019]] (AER 2019)
+- [[Gerard & Naritomi 2021]] (AER 2021)
+- [[Marinescu & Skandalis 2021]] (QJE 2021)
+- [[Mueller et al. 2021]] (AER 2021)
+- [[Abaluck & Gruber 2016]] (AER 2016)
+- [[Barseghyan et al. 2013]] (AER 2013)
+- [[Fang et al. 2008]] (JPE 2008)
+- [[Hendren 2013]] (Econometrica 2013)
+- [[Hendren 2017]] (AER 2017)
+- [[Landais et al. 2018]] (AER 2018)
+- [[Landais & Spinnewijn 2021]] (REStud 2021)
+- [[Sydnor 2010]] (AEJ: Applied Economics 2010)
+- [[Ito 2014]] (AER 2014)
+- [[Goldin & Homonoff 2013]] (AEJ: Economic Policy 2013)
+- [[Laibson et al. 2021]] (NBER Working Paper 29323 2021)
+- [[Gathergood et al. 2019]] (AER 2019)
+- [[Beshears et al. 2022]] (JF 2022)
+- [[Heidhues & Koszegi 2018]] (Handbook of Behavioral Economics 2018)
+- [[Choukhmane 2021]] (Working Paper 2021)
+
+## Researchers (74)
+- [[B. Douglas Bernheim]] — Stanford University
+- [[Dmitry Taubinsky]] — UC Berkeley
+- [[Antonio Rangel]] — Caltech
+- [[Raj Chetty]] — Harvard University
+- [[Faruk Gul]] — Princeton University
+- [[Wolfgang Pesendorfer]] — Princeton University
+- [[Hunt Allcott]] — NYU / Microsoft Research
+- [[Jonathan Gruber]] — MIT
+- [[Botond Kőszegi]] — Central European University
+- [[Ted O'Donoghue]] — Cornell University
+- [[Matthew Rabin]] — Harvard University
+- [[Sendhil Mullainathan]] — University of Chicago
+- [[Benjamin Lockwood]] — University of Pennsylvania (Wharton)
+- [[Emmanuel Farhi]] — Harvard University (1978–2020)
+- [[Xavier Gabaix]] — Harvard University
+- [[Amy Finkelstein]] — MIT
+- [[Richard Thaler]] — University of Chicago Booth (Nobel 2017)
+- [[Cass Sunstein]] — Harvard Law School
+- [[Brigitte Madrian]] — Brigham Young University
+- [[David Laibson]] — Harvard University
+- [[Paul Rogers]] — Opower / Oracle
+- [[Nava Ashraf]] — LSE
+- [[Gabriel Carroll]] — Stanford University
+- [[Sandro Ambuehl]] — University of Toronto
+- [[Saurabh Bhargava]] — Carnegie Mellon University
+- [[Katherine Baicker]] — University of Chicago
+- [[Johannes Spinnewijn]] — LSE
+- [[Bart Bronnenberg]] — Tilburg University
+- [[Stefano DellaVigna]] — UC Berkeley
+- [[Alex Rees-Jones]] — University of Pennsylvania (Wharton)
+- [[Stefanie Stantcheva]] — Harvard University
+- [[Shlomo Benartzi]] — UCLA Anderson
+- [[Elizabeth Linos]] — Harvard Kennedy School
+- [[Judd Kessler]] — University of Pennsylvania (Wharton)
+- [[Jacob Goldin]] — Stanford Law School
+- [[Daniel Reck]] — LSE
+- [[Benjamin Handel]] — UC Berkeley
+- [[Jonathan Kolstad]] — UC Berkeley
+- [[Nathaniel Hendren]] — Harvard University
+- [[Camille Landais]] — LSE
+- [[Jason Abaluck]] — Yale University
+- [[Justin Sydnor]] — University of Wisconsin
+- [[George Loewenstein]] — Carnegie Mellon University
+- [[Sumit Agarwal]] — National University of Singapore
+- [[Jonathan Zinman]] — Dartmouth College
+- [[Michael Grubb]] — Boston College
+- [[Peter Bergman]] — Columbia University
+- [[James Choi]] — Yale University
+- [[Amitabh Chandra]] — Harvard University
+- [[Peter Ganong]] — University of Chicago
+- [[Pascal Noel]] — University of Chicago
+- [[François Gerard]] — Queen Mary University of London
+- [[Joana Naritomi]] — LSE
+- [[Ioana Marinescu]] — University of Pennsylvania
+- [[Daphné Skandalis]] — University of Copenhagen
+- [[Andreas Mueller]] — University of Texas at Austin
+- [[Giorgio Topa]] — Federal Reserve Bank of New York
+- [[Levon Barseghyan]] — Cornell University
+- [[Francesca Molinari]] — Cornell University
+- [[Joshua Teitelbaum]] — Georgetown University Law Center
+- [[Hanming Fang]] — University of Pennsylvania
+- [[Michael Keane]] — University of Oxford
+- [[Dan Silverman]] — Arizona State University
+- [[Pascal Michaillat]] — UC Santa Cruz
+- [[Emmanuel Saez]] — UC Berkeley
+- [[Koichiro Ito]] — University of Chicago Harris School
+- [[Tatiana Homonoff]] — NYU Wagner School
+- [[Peter Maxted]] — Boston University
+- [[Ben Moll]] — LSE
+- [[John Gathergood]] — University of Nottingham
+- [[Neale Mahoney]] — Stanford University
+- [[William Skimmyhorn]] — William & Mary
+- [[Paul Heidhues]] — DICE, University of Düsseldorf
+- [[Taha Choukhmane]] — MIT Sloan

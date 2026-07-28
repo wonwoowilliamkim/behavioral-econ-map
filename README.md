@@ -72,7 +72,13 @@ behavioral-econ-map/
 │       └── researchers.yaml   # 74 researchers, key papers, affiliations
 │
 ├── scripts/
-│   └── build_graph.py         # YAML → graph.json, written to root and site/
+│   ├── build_graph.py         # YAML → graph.json, written to root and site/
+│   └── build_vault.py         # YAML → vault/ (Obsidian notes)
+│
+├── vault/                     # Obsidian vault — open THIS folder, not the repo
+│   ├── .obsidian/             # Graph colors, plugins (tracked; workspace.json is not)
+│   ├── Papers/ Topics/ Researchers/
+│   └── Behavioral Public Economics.md
 │
 ├── index.html                 # ┐ Served page — GitHub Pages publishes the repo
 ├── style.css                  # │ root, so these five files must live here.
@@ -169,6 +175,31 @@ papers, and _Handbook of Behavioral Economics_ chapters.
 
 ---
 
+## Obsidian Vault
+
+The same ontology is also rendered as a linked-note vault. In Obsidian, open
+`vault/` — **not** the repository root, or Obsidian will index the YAML and
+JavaScript too and the graph view becomes unusable.
+
+```bash
+pip install pyyaml
+python scripts/build_vault.py
+# → Built vault: 189 notes + index + CLAUDE.md
+```
+
+| | |
+|---|---|
+| **Note types** | `paper` · `topic` · `subtopic` · `researcher` · `index` (frontmatter `type:`) |
+| **Wikilinks** | `[[Author et al. YYYY]]` · `[[Topic Label]]` · `[[Full Name]]` |
+| **Same-name papers** | APA suffix on the year — `Allcott et al. 2018a` / `2018b` |
+| **Editing** | Don't. Notes are generated; edit `data/ontology/*.yaml` and rerun |
+
+Renamed and removed notes are pruned on each run, so the vault never
+accumulates orphans. A note without generator frontmatter is left untouched,
+so you can keep hand-written notes alongside the generated ones.
+
+---
+
 ## How to Add Papers
 
 1. Open `data/ontology/papers.yaml`
@@ -187,8 +218,15 @@ papers, and _Handbook of Behavioral Economics_ chapters.
     2-3 sentence summary of the paper's contribution.
 ```
 
-3. If needed, add the researcher to `researchers.yaml`
-4. Rebuild: `python scripts/build_graph.py`
+3. If needed, add the researcher to `researchers.yaml` — an `authored` edge is
+   drawn from the researcher's `key_papers` list, not from the paper's
+   `authors`, so a paper without a matching entry there stays unlinked
+4. Rebuild both renderings:
+   ```bash
+   python scripts/build_graph.py    # web
+   python scripts/build_vault.py    # Obsidian
+   ```
+5. Commit and push — Actions redeploys the site automatically
 
 ---
 

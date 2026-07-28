@@ -3,3 +3,7 @@ __pycache__/
 .venv/
 venv/
 .env
+
+# Obsidian per-machine UI state — rewritten on every app open.
+# Vault notes and graph/appearance settings ARE tracked.
+vault/.obsidian/workspace.json
